@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <h:head>
+        <title>Display Single Student Details</title>
+        <link rel="stylesheet" type="text/css" href="page.css" />
+    </h:head>
+    <h:body>
+        <center><h1>Greater Tomorrow Group of School</h1></center>
+        <br></br>
+        <br></br>
+        <center>
+        <nav>
+            <ul>
+                <li><h:outputLink value="index.xhtml">Home Page</h:outputLink></li>
+                <li><h:outputLink value="aboutus.xhtml"> About Us</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="displaystudentdetails.xhtml">Student Details</h:outputLink></li>
+                        <li><h:outputLink value="studentlogin.xhtml">Student Login</h:outputLink></li>
+                        <li><h:outputLink value="studentregistration.xhtml">Student Registration</h:outputLink>
+                            <ul>
+                                <li><h:outputLink value="#">Student Images</h:outputLink></li>
+                                 <li><h:outputLink value="#">Student Forum</h:outputLink></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li><h:outputLink value="DeleteStudentRecord.xhtml">Delete Student Record</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="studentregistration.xhtml">Student Registration</h:outputLink></li>
+                        <li><h:outputLink value="studentsection.xhtml">Student Section</h:outputLink></li>
+                    </ul>
+                </li>
+                <li><h:outputLink value="displaysinglestudentdetails.xhtml">Single Student Details</h:outputLink></li>
+                <li><h:outputLink value="#">Articles</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="#">Web Design</h:outputLink></li>
+                        <li><h:outputLink value="#">User Experience</h:outputLink></li>
+                    </ul>
+                </li>
+                <li><h:outputLink value="#">Tutorials</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="#">Photoshop</h:outputLink></li>
+                        <li><h:outputLink value="#">Illustrator</h:outputLink></li>
+                        <li><h:outputLink value="#">Web Design</h:outputLink></li>
+                    </ul>
+                </li>
+                <li><h:outputLink value="#">Employee Section</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="#">Employee Login</h:outputLink></li>
+                        <li><h:outputLink value="employeegallery.xhtml">Employee Gallery</h:outputLink></li>
+                        <li><h:outputLink value="#">Employee Details</h:outputLink></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+            </center>
+<br></br>
+<br></br>
+<br></br>
+<h:graphicImage url="images/Desert.jpg" height="370" width="250"></h:graphicImage>
+        <h:form id="fm1">
+        <center>
+            <h:panelGrid columns="2" cellpadding="3" cellspacing="2" border="1" bgcolor="#F1F1F1" width="100">
+                <h:outputText value="Please Enter Student Registration Number:"></h:outputText>
+                <h:inputText id="reg" value="#{singleStudentDisplayBean.sregnumber}"></h:inputText>
+            </h:panelGrid>
+                <br></br>
+                <h:commandButton value="Get Details" action="checking.xhtml"></h:commandButton>
+        </center>
+        </h:form>
+<br></br>
+<br></br>
+<br></br>
+<div id="d1">Authors and actors and artists and such
+Never know nothing, and never know much.
+Sculptors and singers and those of their kidney
+Playwrights and poets and such horses’ necks
+Start off from anywhere, end up at sex.
+Diarists, critics, and similar roe.
+<p><h:outputLink value="">[Read More]</h:outputLink></p>
+</div>
+
+<div id="d2">Authors and actors and artists and such
+Never know nothing, and never know much.
+Sculptors and singers and those of their kidney
+Playwrights and poets and such horses’ necks
+Start off from anywhere, end up at sex.
+Diarists, critics, and similar roe.
+<p><h:outputLink value="">[Read More]</h:outputLink></p>
+</div>
+
+<div id="d3">Authors and actors and artists and such
+Never know nothing, and never know much.
+Sculptors and singers and those of their kidney
+Playwrights and poets and such horses’ necks
+Start off from anywhere, end up at sex.
+Diarists, critics, and similar roe.
+<p><h:outputLink value="">[Read More]</h:outputLink></p>
+</div>
+    </h:body>
+</html>
+

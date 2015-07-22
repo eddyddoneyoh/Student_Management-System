@@ -1,0 +1,316 @@
+ Make footer take remianing bottom space using css
+
+
+#footer
+{
+    width: 960px;
+    border: 1px;
+}
+#footerleftpane
+{
+    width: 300px;
+    float: left;
+}
+#footerRightPane
+{
+    width: 300px;
+    float: right;
+}
+#footerMidPane
+{
+    padding:10px;
+}
+
+HTML Code:
+<div id="footer">
+    <div id="footerleftpane" runat="server">
+        <dnn:LOGO id="dnnLogo" runat="server" />
+        <h3>Driving business performance.</h3>
+        <h3>Practical Sales and Operations Planning</h3>
+        <h3>for medium sized businesses.</h3>
+    </div>
+    <div id="footerRightPane" runat="server">
+        <dnn:COPYRIGHT id="dnnCopyright" runat="server" /><br />
+        <dnn:PRIVACY id="dnnPrivacy" runat="server" />
+        <dnn:TERMS id="dnnTerms" runat="server" />
+        <br class="clear" />
+    </div>
+    <div id="footerMidPane" runat="server">
+    </div> 
+</div>
+
+
+Add overflow:hidden to #footer, be done with it.
+
+or clear: none;
+=======================================================
+another exampleCreate three divs with float: left; (or right) and give them an exact width.
+
+<div class="bottom">
+  <div style="float: left; width: 33%;"></div>
+  <div style="float: left; width: 33%;"></div>
+  <div style="float: left; width: 33%;"></div>
+</div>
+
+
+=============================
+
+Quite easily done using floats:
+
+<div id="footer">
+    <p class="left">Left aligned text here<br />Next line here</p>
+    <p class="right">Right aligned text here<br />Next line here</p>
+    <p class="centered">Center Text here<br />Next line here</p>
+</div>
+and the CSS:
+
+.left{
+text-align:left;
+float:left;
+}
+.right{
+float:right;
+text-align:right;
+}
+.centered{
+text-align:center;
+}
+share|edit
+=======================================
+
+div.bottom
+        {
+            height: 200px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: none;
+            margin-bottom: none;
+            border-top: 4px solid #00ccff;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background-color: #575757;
+        }
+
+
+<div class="bottom">
+  <div style="float: left; width: 33%;"></div>
+  <div style="float: left; width: 33%;"></div>
+  <div style="float: left; width: 33%;"></div>
+</div>
+==========================================
+
+HTML
+
+<footer>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div id="meta-links"></div>
+</footer>?
+
+CSS
+
+footer {
+  width:100%;
+  background-color:#CCC;
+  min-height:100px;    
+}
+
+.column {
+  width:30.5%;
+  background-color:#333;
+  height:100px;
+  float:left;
+  margin:0 10px;
+}
+
+#meta-links {
+ width:100%;
+ background-color:red;
+ float:left;   
+ height:20px;
+}
+
+orrrrrrrrrrrrrr
+The first thing I would do is change your padding. And the second thing I would try is floating the columns left... For example....
+
+footer {
+ height: auto;
+ padding:1px 15px;
+ width:520px;
+ }
+#footer_links{
+ float:left;
+ width:150px;  
+ border:1px solid #CCC;
+ padding:10px;
+}
+#values {
+ width:150px;        
+ float:left;
+ text-align:justify;
+ border:1px solid #CCC;
+ padding:10px;
+ }
+#contacts{
+float: left;
+width:150px; 
+border:1px solid #CCC;
+padding:10px;
+}
+#copyright{
+float:left;
+text-align:center;
+border:1px solid #333;
+width:514px;
+}
+Also you don't necessarily need to use clear both if all columns have a fixed equal width (which they should) to follow the design / UX principle of using a grid. For my new fiddle example I used fixed pixel widths. However if you were to create a fluid layout you could use percentages by calculating the inner width (excluding padding) and dividing it by three. As for the footer it can just float left with a width of 100%;
+
+Another thing to keep in mind is that if your columns all have equal width and padding you don't need to use ID's for each container. You could use one class like in my example above.
+==============================================
+
+Edit: In response to your comment: it should work. Here's a little test case:
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html lang="en">
+ <head>
+  <title>Test case for the CSS footer problem</title>
+  <style type="text/css">
+   #footer { width: 300px; outline: 1px solid red; }
+    #footer p.left { float: left; }
+    #footer p.right { float: right; }
+  </style>
+ </head>
+ <body>
+  <p>See <a href="http://stackoverflow.com/questions/867587/css-footer-trying-to-split-into-2-columns" title="Stack Overflow: CSS footer; trying to split into two columns">http://stackoverflow.com/questions/867587/css-footer-trying-to-split-into-2-columns</a> for details.
+  <div id="footer">
+   <p class="left">Copyright © 2009</p>
+   <p class="right">Designed by xxxxxx</p>
+  </div>
+ </body>
+</html>
+==================================
+Problem is that on your #footer you have a clear: both; which kills all floats.
+
+It would be better if you have:
+
+#footer {
+    background-color: #330066; 
+    padding: .5em; 
+    font-size: 0.8em; 
+    color: #fff;
+    width: 100%;
+    overflow: hidden;
+ }
+
+p.left { float: left; }
+p.right { float: right; }
+The width: 100%; and the overflow: hidden; will fix your problem, as it clears the floats after they are made.
+
+With the code above you will be able just to have:
+
+<div id="footer">
+    <p class="left">Copyright &copy; 2009</p>
+    <p class="right">Designed by ****</p>
+</div>
+
+or or or
+
+As paragraphs are block level elements, if you wish them to be displayed side by side you should remove the floats and set them to be inline:
+
+footer p.left {text-align:left; display:inline; }
+footer p.right {text-align:right; display:inline; }
+
+
+
+
+
+
+
+
+
+
+The Bay Area Women’s Sports Initiative (BAWSI) is a public benefit, nonprofit corporation with a mission to create programs and partnerships through which women athletes bring health, hope and wholeness to our community. Founded in 2005 by Olympic and World Cup soccer stars Brandi Chastain and Julie Foudy and Marlene Bjornsrud, former general manager of the San Jose CyberRays women’s professional soccer team, BAWSI provides a meaningful path for women athletes to become a more visible and valued part of the Bay Area sports culture.
+
+
+The Bay Area Women’s Sports Initiative (BAWSI) is a public benefit,
+nonprofit corporation with a mission to create programs and partnerships
+through which women athletes bring health, hope and wholeness to our
+community. Founded in 2005 by Olympic and World Cup soccer stars Brandi
+Chastain and Julie Foudy and Marlene Bjornsrud, former general manager
+of the San Jose CyberRays women’s professional soccer team, 
+BAWSI provides a meaningful path for women athletes to become
+a more visible and valued part of the Bay Area sports culture.
+
+
+
+History of Greater Tomorrow
+
+The concept of BAWSI was inspired by one of the most spectacular achievements in women’s sports history and born out of one its biggest disappointments...
+
+
+<style type=”text/css”>
+body {
+font: 12pt Verdana, Arial, Georgia, sans-serif;
+}
+#nav {
+width:150px;
+float:left;
+margin-top:12px;
+margin-right:18px;
+}
+#content {
+width:550px;
+float:left;
+}
+</style>
+
+
+<h1>About Us</h1>
+<p>The Bay Area Women’s Sports Initiative (BAWSI) is a public benefit,
+nonprofit corporation with a mission to create programs and partnerships
+through which women athletes bring health, hope and wholeness to our
+community. Founded in 2005 by Olympic and World Cup soccer stars Brandi
+Chastain and Julie Foudy and Marlene Bjornsrud, former general manager
+of the San Jose CyberRays women’s professional soccer team, 
+BAWSI provides a meaningful path for women athletes to become
+a more visible and valued part of the Bay Area sports culture.</p>
+
+<ul>
+<li><a href=”#”>Mission</a>: Learn more about our corporate
+mission and philanthropic efforts.</li>
+<li><a href=”#”>History</a>: Read about our corporate history
+and learn how we grew to become the largest widget maker
+in the country.</li>
+<li><a href=”#”>Executive Team</a>: Our team of executives makes
+the company run like a well-oiled machine (also useful for
+making widgets).</li>
+<li><a href=”#”>Contact Us</a>: Here you can find multiple
+methods for contacting us (and we really do care what you
+have to say).</li>
+</ul>
+
+
+
+
+footer { width:960px; (other styling you want in the footer here (eg. background colour...) }
+footer  div { width:288px; padding:15px; border:1px solid #999; float:left;}
+
+THE BELOW CODE WORKS 60%
+
+footer{
+    
+    background-color: #000000;
+}
+footer div{
+    width: 450px; float: left; background-color: #575f6a;
+}
+
+
+<footer style="width:1250px">
+<div style="width:416px;float:left"><div style="padding:15px; border:1px solid #999">Column One</div></div>
+<div style="width:416px;float:left"><div style="padding:15px; border:1px solid #999">Column Two</div></div>
+<div style="width:416px;float:left"><div style="padding:15px; border:1px solid #999">Column Three</div></div>
+<div style="clear:both"></div>
+</footer>

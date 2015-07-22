@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Display Student Details</title>
+        <link rel="stylesheet" type="text/css" href="page.css" />
+    </h:head>
+    <h:body>
+        <center><h1>Greater Tomorrow Group of School</h1></center>
+        <br></br>
+        <br></br>
+         <center><h:outputLink value="studentupdate.xhtml">Update Student Record</h:outputLink> &nbsp;&nbsp;<h:outputLink value="aboutus.xhtml">About us</h:outputLink>&nbsp;&nbsp;<h:outputLink value="DeleteStudentRecord.xhtml">Delete Student Record</h:outputLink>&nbsp;&nbsp;<h:outputLink value="displaysinglestudentdetails.xhtml">Single Student Details</h:outputLink>&nbsp;&nbsp;<h:outputLink value="displaystudentdetails.xhtml">Student Details</h:outputLink>&nbsp;&nbsp;<h:outputLink value="studentlogin.xhtml">Students Login</h:outputLink>&nbsp;&nbsp;<h:outputLink value="studentregistration.xhtml">Students Registration</h:outputLink>&nbsp;&nbsp;<h:outputLink value="studentsection.xhtml">Students Section</h:outputLink></center> 
+         <br></br>
+         <br></br>
+        <center><h1><b>Student Details</b></h1></center>
+        <br></br>
+        <center>
+            <h:dataTable id="dt1" value="#{displayBean.getUserList()}" var="item" bgcolor="#F1F1F1" border="5" cellpadding="5" cellspacing="3" rows="0" width="80%" dir="LTR">
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Registration Number"/>     
+                    </f:facet>
+                    <h:outputText value="#{item.regnumber}"></h:outputText>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="First Name"/>     
+                    </f:facet>
+                    <h:outputText value="#{item.fname}"></h:outputText>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Last Name"/>     
+                    </f:facet>
+                    <h:outputText value="#{item.lname}"></h:outputText>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Student Class"/>     
+                    </f:facet>
+                    <h:outputText value="#{item.sclass}"></h:outputText>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Date Of Birth"/>     
+                    </f:facet>
+                    <h:outputText value="#{item.dateofbirth}"></h:outputText>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Student Address"/>     
+                    </f:facet>
+                    <h:outputText value="#{item.address}"></h:outputText>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Sex"/>     
+                    </f:facet>
+                    <h:outputText value="#{item.sex}"></h:outputText>
+                </h:column>
+            </h:dataTable>
+        </center>
+        
+    </h:body>
+</html>
+

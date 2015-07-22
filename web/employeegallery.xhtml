@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Employee Gallery</title>
+        <link rel="stylesheet" type="text/css" href="page.css" />
+        <style>
+            body{
+               
+            }
+div.img
+  {
+  margin:10px;
+  border:5px solid blue;
+  height:auto;
+  width: 500px;
+  float:left;
+  text-align:left;
+  position: relative;
+  border-radius: 15px;
+  
+  }
+div.img img
+  {
+  display:inline;
+  margin:3px;
+  border:1px solid #ffffff;
+  }
+div.img a:hover img
+  {
+  border:1px solid #0000ff;
+  }
+div.desc
+  {
+  text-align: center;
+  font-weight:normal;
+  width:270px;
+  margin:2px;
+  position: relative;
+  }
+  td{
+ color: #ffffff; 
+ font: 8pt Verdana; 
+}
+td a{
+    color: #efefef;
+    text-decoration: none;  
+    
+}
+td a:link{
+    font-size: 9px;
+}
+td a:hover{
+    text-decoration: underline;
+    color:  #ffffff;
+}
+td.footerheader{
+   color: gold; 
+   font-weight:  bolder;
+   font: 12pt Verdana;   
+}
+td.footercontent{
+    color: #FF0000;
+    font-weight: normal; 
+}
+</style>
+    </h:head>
+    <h:body>
+        <center><h1>About Greater Tomorrow Group of School</h1></center>
+        <br></br>
+        <center>
+        <nav>
+            <ul>
+                <li><h:outputLink value="homepage.xhtml">Home Page</h:outputLink></li>
+                <li><h:outputLink value="aboutus.xhtml"> About Us</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="displaystudentdetails.xhtml">Student Details</h:outputLink></li>
+                        <li><h:outputLink value="studentlogin.xhtml">Student Login</h:outputLink></li>
+                        <li><h:outputLink value="studentregistration.xhtml">Student Registration</h:outputLink>
+                            <ul>
+                                <li><h:outputLink value="#">Student Images</h:outputLink></li>
+                                 <li><h:outputLink value="#">Student Forum</h:outputLink></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li><h:outputLink value="DeleteStudentRecord.xhtml">Delete Student Record</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="studentregistration.xhtml">Student Registration</h:outputLink></li>
+                        <li><h:outputLink value="studentsection.xhtml">Student Section</h:outputLink></li>
+                    </ul>
+                </li>
+                <li><h:outputLink value="displaysinglestudentdetails.xhtml">Single Student Details</h:outputLink></li>
+                <li><h:outputLink value="#">Articles</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="#">Web Design</h:outputLink></li>
+                        <li><h:outputLink value="#">User Experience</h:outputLink></li>
+                    </ul>
+                </li>
+                <li><h:outputLink value="#">Tutorials</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="#">Photoshop</h:outputLink></li>
+                        <li><h:outputLink value="#">Illustrator</h:outputLink></li>
+                        <li><h:outputLink value="#">Web Design</h:outputLink></li>
+                    </ul>
+                </li>
+                <li><h:outputLink value="#">Employee Section</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="#">Employee Login</h:outputLink></li>
+                        <li><h:outputLink value="#">Employee Gallery</h:outputLink></li>
+                        <li><h:outputLink value="#">Employee Details</h:outputLink></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        </center>
+        <BR></BR>
+        <br></br> 
+        <h:graphicImage value="images/aboutus_16.jpg" width="70" height="800" style=" float: left"></h:graphicImage>
+<div class="img">
+    <h:graphicImage value="images/Gino1.JPG" alt="Gino Wine" width="250" height="200"></h:graphicImage>
+    <div class="desc">This is Gino Wine, CEO Enesoft Technologies, email:ginowine1@yahoo.com, phone number: 080234256243</div>
+</div>
+<div class="img">
+    <h:graphicImage url="images/Gino.JPG" alt="Gino Wine" width="250" height="200"></h:graphicImage>
+  <div class="desc">This is Gino Wine, CEO Enesoft Technologies email:ginowine1@yahoo.com, phone number: 080234256243</div>
+</div>
+<div class="img">
+    <h:graphicImage value="images/Gino3.JPG" alt="Gino Wine" width="250" height="200"></h:graphicImage>
+  <div class="desc">This is Gino Wine,CEO Enesoft Technologies email:ginowine1@yahoo.com, phone number: 080234256243</div>
+</div>
+<div class="img">
+    <h:graphicImage value="images/PowerBiker.JPG" alt="Gino Wine" width="250" height="200"></h:graphicImage>
+  <div class="desc">Gino Mazoni, the zinzoo biker email:ginowine1@yahoo.com, phone number: 080234256243</div>
+</div>
+        <br></br>
+        <br></br>
+        <div class="img">
+    <h:graphicImage value="images/Queen2.jpg" alt="Gino Wine" width="250" height="200"></h:graphicImage>
+    <div class="desc">Queen, CFO Enesoft Technologies email:ginowine1@yahoo.com, phone number: 080234256243</div>
+</div>
+<div class="img">
+    <h:graphicImage url="images/Momsy1.JPG" alt="Gino Wine" width="250" height="200"></h:graphicImage>
+  <div class="desc">Mumsy, Spiritual Guidian Enesoft Technologies email:ginowine1@yahoo.com, phone number: 080234256243</div>
+</div>
+<div class="img">
+    <h:graphicImage value="images/uwa1..jpg" alt="Gino Wine" width="250" height="200"></h:graphicImage>
+  <div class="desc">Uwa, Managing Director Enesoft Technologies</div>
+</div>
+<div class="img">
+    <h:graphicImage value="images/Queen1.jpg" alt="Gino Wine" width="250" height="200"></h:graphicImage>
+  <div class="desc">Queen, CFO Enesoft Technologies</div>
+</div>
+        <br></br>
+        <br></br>
+        <td>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style=" background-image: url('images/index_29b.jpg'); background-repeat:  repeat-x; border-radius: 15px">
+                <tr>
+                    <td width="5%"><h:graphicImage value="images/spacer1.gif" width="57" height="20"></h:graphicImage></td>
+                    <td width="85%">&nbsp;</td>
+                    <td width="11%"><h:graphicImage value="images/spacer1.gif" width="120" height="20"></h:graphicImage></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="17%" valign="top"><table width="160" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">About Us</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Principal Officers</h:outputLink></td>
+                                        </tr>
+                                        
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Welcome Address</h:outputLink></td>
+                                        </tr>
+                                        
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Vision and Mission</h:outputLink></td>
+                                        </tr>
+                                        
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Our History</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Administration</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Registrar</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Principal Officers</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Bursary</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Student Affairs</h:outputLink></td>
+                                        </tr>    
+                                    </table>
+                                </td>
+                                <td width="18%" valign="top"><table width="170" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">Communities</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Professional Bodies</h:outputLink></td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Academic Planning Unit</h:outputLink></td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Staff Training Center</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Staff School</h:outputLink></td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Community Pharmacy</h:outputLink></td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Security Center</h:outputLink></td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">GST</h:outputLink></td>
+                                        </tr> 
+                                        
+                                    </table>
+                                    
+                                </td>
+                                
+                                <td width="18%" valign="top"><table width="170" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">Academics</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">College of Medicine</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Faculties</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">School of Post Graduate Studies</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Academic Program</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Academic Calender</h:outputLink></td>
+                                        </tr>
+                                        
+                                    </table>
+                                    
+                                </td>
+                                
+                                <td width="14%" valign="top"><table width="130" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">Media</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Latest News</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Archived News</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Notices</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Magazine</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">FAQ</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Downloads</h:outputLink></td>
+                                        </tr>
+                                        
+                                    </table>
+                                    
+                                </td>
+                                
+                                <td width="19%" valign="top"><table width="170" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">Publications</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Register for the Research Conference</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">View Publications</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Search Publications</h:outputLink></td>
+                                        </tr>
+                                        
+                                    </table>
+                                    
+                                </td>
+                                
+                                <td width="14%" valign="top"><table width="110" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">Contact Us</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Contact Details</h:outputLink></td>
+                                        </tr>
+                                        
+                                    </table>
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        </table>
+                        
+                    </td>
+                    <td valign="top"><h:graphicImage value="images/socialnt.jpg" width="100" height="100" usemap="#map2"></h:graphicImage></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><h:graphicImage value="images/spacer1.gif" width="120" height="20"></h:graphicImage></td>
+                </tr>
+                
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="10%" class="footer">Contact</td> 
+                                <td width="15%" class="footer">Privacy</td> 
+                                <td width="15%" class="footer">Terms of Use</td> 
+                                <td width="20%" class="footer">Accessibility</td> 
+                                <td width="40%" class="footer">powered by Enesoft Technologies 2013</td> 
+                            </tr>
+                            
+                        </table>
+                        
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+            
+        <map name="Map2"> 
+            <area shape="rect" coords="38,5,80,47" href="#"></area><area shape="rect" coords="41,50,80,92" href="http://twitter.com/unilag_1962" target="blank"></area>
+        </map>
+    </h:body>
+</html>
+

@@ -1,0 +1,31 @@
+/* 
+    Document   : main
+    Created on : Jan 22, 2013, 3:29:16 PM
+    Author     : user
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+ 
+.body {
+    font-family: verdana;
+}
+.errorMessage{
+    color:red;
+}
+ 
+.infoMessage{
+    color:blue
+}
+ 
+.warnMessage{
+    color:orange;
+}
+ 
+.header{
+    font-size:32px
+}
+

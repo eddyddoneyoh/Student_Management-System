@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Student Update Page</title>
+        <link rel="stylesheet" type="text/css" href="page.css" />
+    </h:head>
+    <h:body>
+       <center><h1>About Greater Tomorrow Group of School</h1></center>
+        <br></br>
+        <br></br>
+                <center>
+        <nav>
+            <ul>
+                <li><h:outputLink value="index.xhtml">Home Page</h:outputLink></li>
+                <li><h:outputLink value="aboutus.xhtml"> About Us</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="displaystudentdetails.xhtml">Student Details</h:outputLink></li>
+                        <li><h:outputLink value="studentlogin.xhtml">Student Login</h:outputLink></li>
+                        <li><h:outputLink value="studentregistration.xhtml">Student Registration</h:outputLink>
+                            <ul>
+                                <li><h:outputLink value="#">Student Images</h:outputLink></li>
+                                 <li><h:outputLink value="#">Student Forum</h:outputLink></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li><h:outputLink value="DeleteStudentRecord.xhtml">Delete Student Record</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="studentregistration.xhtml">Student Registration</h:outputLink></li>
+                        <li><h:outputLink value="studentsection.xhtml">Student Section</h:outputLink></li>
+                    </ul>
+                </li>
+                <li><h:outputLink value="displaysinglestudentdetails.xhtml">Single Student Details</h:outputLink></li>
+                <li><h:outputLink value="#">Articles</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="#">Web Design</h:outputLink></li>
+                        <li><h:outputLink value="#">User Experience</h:outputLink></li>
+                    </ul>
+                </li>
+                <li><h:outputLink value="#">Tutorials</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="#">Photoshop</h:outputLink></li>
+                        <li><h:outputLink value="#">Illustrator</h:outputLink></li>
+                        <li><h:outputLink value="#">Web Design</h:outputLink></li>
+                    </ul>
+                </li>
+                <li><h:outputLink value="#">Employee Section</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="#">Employee Login</h:outputLink></li>
+                        <li><h:outputLink value="#">Employee Gallery</h:outputLink></li>
+                        <li><h:outputLink value="#">Employee Details</h:outputLink></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+            </center>
+        <br></br>
+        <br></br>
+        <br></br>
+        <center>
+        <h:form>
+            <h:dataTable value="#{updateStudentBean.userList}" var="o" bgcolor="#F1F1F1" border="5" cellpadding="5" cellspacing="3" rows="0" width="100%">
+ 
+    	     <h:column>
+ 
+                <f:facet name="header">Reg No</f:facet>
+ 
+                <h:inputText value="#{o.dregnumber}" size="10" rendered="#{o.editable}" />
+ 
+                <h:outputText value="#{o.dregnumber}" rendered="#{not o.editable}" />
+ 
+    	     </h:column>
+ 
+    	     <h:column>
+ 
+    		<f:facet name="header">F Name</f:facet>
+ 
+                <h:inputText value="#{o.dfname}" size="20" rendered="#{o.editable}" />
+ 
+                <h:outputText value="#{o.dfname}" rendered="#{not o.editable}" />
+ 
+    	     </h:column>
+ 
+    	     <h:column>
+ 
+    		<f:facet name="header">L Name</f:facet>
+ 
+                <h:inputText value="#{o.dlname}" size="10" rendered="#{o.editable}" />
+ 
+                <h:outputText value="#{o.dlname}" rendered="#{not o.editable}" />
+ 
+    	     </h:column>
+ 
+    	     <h:column>
+ 
+    		<f:facet name="header">Class</f:facet>
+ 
+                <h:inputText value="#{o.dsclass}" size="5" rendered="#{o.editable}" />
+ 
+                <h:outputText value="#{o.dsclass}" rendered="#{not o.editable}" />
+ 
+    	     </h:column>
+                
+                 
+    	     <h:column>
+ 
+    		<f:facet name="header">Date of Birth</f:facet>
+ 
+                <h:inputText value="#{o.ddateofbirth}" size="5" rendered="#{o.editable}" />
+ 
+                <h:outputText value="#{o.ddateofbirth}" rendered="#{not o.editable}" />
+ 
+    	     </h:column>
+                 
+    	     <h:column>
+ 
+    		<f:facet name="header">Sex</f:facet>
+ 
+                <h:inputText value="#{o.dsex}" size="5" rendered="#{o.editable}" />
+ 
+                <h:outputText value="#{o.dsex}" rendered="#{not o.editable}" />
+ 
+    	     </h:column>
+                
+                                 
+    	     <h:column>
+ 
+    		<f:facet name="header">Email</f:facet>
+ 
+                <h:inputText value="#{o.demail}" size="5" rendered="#{o.editable}" />
+ 
+                <h:outputText value="#{o.demail}" rendered="#{not o.editable}" />
+ 
+    	     </h:column>
+                
+              <h:column>
+ 
+    		<f:facet name="header">Phone</f:facet>
+ 
+                <h:inputText value="#{o.dphone}" size="5" rendered="#{o.editable}" />
+ 
+                <h:outputText value="#{o.dphone}" rendered="#{not o.editable}" />
+ 
+    	     </h:column>
+                
+             <h:column>
+ 
+    		<f:facet name="header">Password</f:facet>
+ 
+                <h:inputText value="#{o.dpassword}" size="5" rendered="#{o.editable}" />
+ 
+                <h:outputText value="#{o.dpassword}" rendered="#{not o.editable}" />
+ 
+    	     </h:column>
+                
+              <h:column>
+ 
+    		<f:facet name="header">Street</f:facet>
+ 
+                <h:inputText value="#{o.dstreet}" size="5" rendered="#{o.editable}" />
+ 
+                <h:outputText value="#{o.dstreet}" rendered="#{not o.editable}" />
+ 
+    	     </h:column>
+                
+             <h:column>
+ 
+    		<f:facet name="header">State</f:facet>
+ 
+                <h:inputText value="#{o.dstate}" size="5" rendered="#{o.editable}" />
+ 
+                <h:outputText value="#{o.dstate}" rendered="#{not o.editable}" />
+ 
+    	     </h:column>
+                
+             <h:column>
+ 
+    		<f:facet name="header">City</f:facet>
+ 
+                <h:inputText value="#{o.dcity}" size="5" rendered="#{o.editable}" />
+ 
+                <h:outputText value="#{o.dcity}" rendered="#{not o.editable}" />
+ 
+    	     </h:column>
+                
+             <h:column>
+ 
+    		<f:facet name="header">Country</f:facet>
+ 
+                <h:inputText value="#{o.dcountry}" size="5" rendered="#{o.editable}" />
+ 
+                <h:outputText value="#{o.dcountry}" rendered="#{not o.editable}" />
+ 
+    	     </h:column>
+ 
+    	     <h:column>
+ 
+    		<f:facet name="header">Action</f:facet>
+ 
+                <h:commandLink value="Edit" action="#{updateStudent.editAction(user)}" 
+                               rendered="#{not o.editable}" />
+ 
+    	     </h:column>
+ 
+    	  </h:dataTable>
+            <br></br>
+            <br></br>
+ 
+            <h:commandButton value="Save Changes" action="#{updateStudent.update()}" />
+ 
+      </h:form>
+            </center>
+    </h:body>
+</html>
+

@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Administrators Page</title>
+        <style type="text/css">
+            .header{
+                width: 1320px;
+                height: 90px;
+                border-bottom: 3px solid black;
+            }
+            .menu{
+                width: 270px;
+                height: 650px;
+                border-right: 3px solid black;
+                float: left;
+                overflow: scroll;  
+                font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                overflow-x:  hidden;
+                
+            }
+                            a:link, a:visited{
+                     color: #004CCA;
+                     font-size: 10pt;
+                     text-decoration: none;
+                 }
+                a:hover, a:active {
+                
+                color:#800080;
+                text-decoration: underline;
+                        }
+            .content{
+                width: 1220px;
+                
+                
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:panelGroup layout="block" id="header" class="header">
+            <h1 align="center" style=" color: navy">Welcome to Exams and Records Administrator's Control Panel</h1>
+        </h:panelGroup>
+        <h:panelGroup id="menu" layout="block" class="menu">
+            <h:form>
+                <f:ajax render=":contentform">
+            <ul>
+                <li><h:commandLink value="Computer Science 100 Level" action="#{adminsBean.setPage('computerscience')}" /></li>            
+                <li><h:commandLink value="Computer Science 200 Level" action="#{adminsBean.setPage('businessadmin')}" /></li>            
+                <li><h:commandLink value="Computer Science 300 Level" action="#{adminsBean.setPage('geology')}" /></li>   
+                <li><h:commandLink value="Computer Science 400 Level" action="#{adminsBean.setPage('geology')}" /></li> 
+            </ul>
+            <ul>
+                <li><h:commandLink value="Geology 100 Level" action="#{adminBean.setPage('computerscience')}" /></li>            
+                <li><h:commandLink value="Geology 200 Level" action="#{adminBean.setPage('businessadmin')}" /></li>            
+                <li><h:commandLink value="Geology 300 Level" action="#{adminBean.setPage('geology')}" /></li>   
+                <li><h:commandLink value="Geology 400 Level" action="#{adminBean.setPage('geology')}" /></li> 
+            </ul>
+             <ul>
+                <li><h:commandLink value="Law 100 Level" action="#{adminBean.setPage('computerscience')}" /></li>            
+                <li><h:commandLink value="Law 200 Level" action="#{adminBean.setPage('businessadmin')}" /></li>            
+                <li><h:commandLink value="Law 300 Level" action="#{adminBean.setPage('geology')}" /></li>   
+                <li><h:commandLink value="Law 400 Level" action="#{adminBean.setPage('geology')}" /></li> 
+            </ul>
+            <ul>
+                <li><h:commandLink value="Chemical Eng 100 Level" action="#{adminBean.setPage('computerscience')}" /></li>            
+                <li><h:commandLink value="Chemical Eng 200 Level" action="#{adminBean.setPage('businessadmin')}" /></li>            
+                <li><h:commandLink value="Chemical Eng 300 Level" action="#{adminBean.setPage('geology')}" /></li>   
+                <li><h:commandLink value="Chemical Eng 400 Level" action="#{adminBean.setPage('geology')}" /></li> 
+            </ul>
+            <ul>
+                <li><h:commandLink value="Petroleum Eng 100 Level" action="#{adminBean.setPage('computerscience')}" /></li>            
+                <li><h:commandLink value="Petroleum Eng 200 Level" action="#{adminBean.setPage('businessadmin')}" /></li>            
+                <li><h:commandLink value="Petroleum Eng 300 Level" action="#{adminBean.setPage('geology')}" /></li>   
+                <li><h:commandLink value="Petroleum Eng 400 Level" action="#{adminBean.setPage('geology')}" /></li> 
+            </ul>
+            <ul>
+                <li><h:commandLink value="Civil Eng 100 Level" action="#{adminBean.setPage('computerscience')}" /></li>            
+                <li><h:commandLink value="Civil Eng 200 Level" action="#{adminBean.setPage('businessadmin')}" /></li>            
+                <li><h:commandLink value="Civil Eng 300 Level" action="#{adminBean.setPage('geology')}" /></li>   
+                <li><h:commandLink value="Civil Eng 400 Level" action="#{adminBean.setPage('geology')}" /></li> 
+            </ul>
+            <ul>
+                <li><h:commandLink value="Structural Eng 100 Level" action="#{adminBean.setPage('computerscience')}" /></li>            
+                <li><h:commandLink value="Structural Eng 200 Level" action="#{adminBean.setPage('businessadmin')}" /></li>            
+                <li><h:commandLink value="Structural Eng 300 Level" action="#{adminBean.setPage('geology')}" /></li>   
+                <li><h:commandLink value="Structural Eng 400 Level" action="#{adminBean.setPage('geology')}" /></li> 
+            </ul>
+            <ul>
+                <li><h:commandLink value="Public Admin 100 Level" action="#{adminBean.setPage('computerscience')}" /></li>            
+                <li><h:commandLink value="Public Admin 200 Level" action="#{adminBean.setPage('businessadmin')}" /></li>            
+                <li><h:commandLink value="Public Admin 300 Level" action="#{adminBean.setPage('geology')}" /></li>   
+                <li><h:commandLink value="Public Admin 400 Level" action="#{adminBean.setPage('geology')}" /></li> 
+            </ul>
+            <ul>
+                <li><h:commandLink value="Business Admin 100 Level" action="#{adminBean.setPage('computerscience')}" /></li>            
+                <li><h:commandLink value="Business Admin 200 Level" action="#{adminBean.setPage('businessadmin')}" /></li>            
+                <li><h:commandLink value="Business Admin 300 Level" action="#{adminBean.setPage('geology')}" /></li>   
+                <li><h:commandLink value="Business Admin 400 Level" action="#{adminBean.setPage('geology')}" /></li> 
+            </ul>
+            <ul>
+                <li><h:commandLink value="Accounting 100 Level" action="#{adminBean.setPage('computerscience')}" /></li>            
+                <li><h:commandLink value="Accounting 200 Level" action="#{adminBean.setPage('businessadmin')}" /></li>            
+                <li><h:commandLink value="Accounting 300 Level" action="#{adminBean.setPage('geology')}" /></li>   
+                <li><h:commandLink value="Accounting 400 Level" action="#{adminBean.setPage('geology')}" /></li> 
+            </ul>
+            <ul>
+                <li><h:commandLink value="Economics 100 Level" action="#{adminBean.setPage('computerscience')}" /></li>            
+                <li><h:commandLink value="Economics 200 Level" action="#{adminBean.setPage('businessadmin')}" /></li>            
+                <li><h:commandLink value="Economics 300 Level" action="#{adminBean.setPage('geology')}" /></li>   
+                <li><h:commandLink value="Economics 400 Level" action="#{adminBean.setPage('geology')}" /></li> 
+            </ul>
+            <ul>
+                <li><h:commandLink value="Agriculture 100 Level" action="#{adminBean.setPage('computerscience')}" /></li>            
+                <li><h:commandLink value="Agriculture 200 Level" action="#{adminBean.setPage('businessadmin')}" /></li>            
+                <li><h:commandLink value="Agriculture 300 Level" action="#{adminBean.setPage('geology')}" /></li>   
+                <li><h:commandLink value="Agriculture 400 Level" action="#{adminBean.setPage('geology')}" /></li> 
+            </ul>
+                    
+                    
+                </f:ajax>
+            </h:form>
+        </h:panelGroup>
+        <h:panelGroup id="content" layout="block" class="content">
+            <h:form id="contentform">
+                <h:panelGroup rendered="#{adminsBean.page == 'computerscience'}">
+                    <ui:include src="computerscience.xhtml"/>
+                </h:panelGroup>
+                <h:panelGroup rendered="#{adminsBean.page == 'businessadmin'}">
+                    <ui:include src="businessadmin1.xhtml"/>
+                </h:panelGroup>
+                <h:panelGroup rendered="#{adminsBean.page == 'geology'}">
+                    <ui:include src="geology.xhtml"/>
+                </h:panelGroup>
+            </h:form>
+        </h:panelGroup>
+    </h:body>
+</html>
+

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <h:head>
+        <title>Student Result Display Page</title>
+    </h:head>
+    <h:body>
+        <h:dataTable value="#{resultBean.rows}" var="map">
+            <c:forEach items="#{resultBean.columns}" var="column">
+                <h:column>
+                    <f:facet name="header">#{column.value}</f:facet>
+                    #{map[column.key]}
+                </h:column>
+                
+            </c:forEach>
+            
+        </h:dataTable>
+    </h:body>
+</html>
+

@@ -1,0 +1,742 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Administrations Page</title>
+        <style type="text/css">
+body {
+     font: 10pt Verdana, Arial, Georgia, sans-serif;
+     background-image: url('images/aboutus_16.jpg');
+     background-repeat: repeat-x;
+     margin-left: 0px;
+     margin-top: 0px;
+     margin-right: 0px;
+     margin-bottom: 0px;
+}
+#nav {
+      width:150px;
+      float:left;
+      margin-top:12px;
+      margin-right:18px;
+      text-decoration: none;
+}
+#content {
+         width:1000px;
+         float:left;
+         font: 12px Verdana, Arial, Georgia, sans-serif;
+         color:#4b545f;
+         line-height:17px;
+}
+#nav a{
+    text-decoration: none;
+}
+#content a{
+    text-decoration: none;
+    color: #4b545f;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+#content a:hover{
+    text-decoration:  underline;
+}
+span.headblue{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#3B6EAD;
+	text-align:left;
+	font-weight:bold;
+}
+td.content1{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:11px;
+    line-height:17px;
+    color:#333333;
+}
+td.content1 a{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:11px;
+    color:#333333;
+    text-decoration:none;
+    font-weight:  bold;
+}
+#nav ul{
+    list-style: none;
+    margin: 12px 0px 0px 0px;;
+    padding: 0px;
+}
+#nav ul li{
+    border-bottom: 1px solid #ffffff;
+}
+#nav ul li a:link, #nav ul li a:visited{
+    font-size: 10pt;
+    font-weight: bold;
+    display: block;
+    padding: 3px 0px 3px 3px;
+    background-color: #628794;
+    color: #ffffff;
+}
+#nav ul li a:hover, #nav ul li a:active{
+    font-size: 10pt;
+    font-weight: bold;
+    display: block;
+    padding: 3px 0px 3px 3px;
+    background-color: #c6a648;
+    color: #000000;
+}
+#nav ul ul{
+    margin: 0px;
+    padding: 0px;
+    display: none;
+}
+#nav ul li:hover > ul{
+    display: block;
+}
+#nav ul ul li{
+    border-bottom: none;
+}
+#nav ul ul li a:link, #nav ul ul li a:visited{
+    font-size: 8pt;
+    font-weight: bold;
+    display: block;
+    padding: 3px 0px 3px 18px;
+    background-color: #628794;
+    color: #ffffff;
+}
+#nav ul ul li a:hover, #nav ul ul li a:active{
+    font-size: 8pt;
+    font-weight: bold;
+    display: block;
+    padding: 3px 0px 3px 18px;
+    background-color: #c6a648;
+    color: #000000;
+}
+td{
+ color: #ffffff; 
+ font: 8pt Verdana; 
+}
+td a{
+    color: #CCCCCC;
+    text-decoration: none;  
+}
+td a:hover{
+    text-decoration: underline;
+}
+td.footerheader{
+   color: gold; 
+   font-weight:  bolder;
+   font: 12pt Verdana;   
+}
+td.footercontent{
+    color: #FF0000;
+    font-weight: normal; 
+}
+td.footer{
+    color: #CCCCCC;
+}
+</style>
+    </h:head>
+    <h:body>
+        <h:graphicImage value="images/about.jpg" width="1349" height="170"></h:graphicImage>
+        <div id="nav">
+            <ul>
+                <li><h:outputLink value="homepage.xhtml">Home Page</h:outputLink></li>
+                <li><h:outputLink value="#">Mission</h:outputLink></li>
+                <li><h:outputLink value="#">History</h:outputLink></li>
+                <li><h:outputLink value="#">Lecturers</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="#">&raquo; Senior Lecturers</h:outputLink></li>
+                        <li><h:outputLink value="#">&raquo; Junior Lecturers</h:outputLink></li>
+                        <li><h:outputLink value="#">&raquo; Lab Attendants</h:outputLink></li>
+                        <li><h:outputLink value="#">&raquo; Professors</h:outputLink></li>
+                    </ul>
+                </li>
+                <li><h:outputLink value="#">Contact Us</h:outputLink></li>
+            </ul>
+        </div>
+        <br></br>
+        <h2><center>Administrations</center></h2>
+        <td valign="top"><table width="65%" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td colspan="3"><h:graphicImage value="images/aboutus_15.jpg" width="880" height="10"></h:graphicImage></td>
+                        
+                    </tr>
+                    <tr>
+                        <td valign="top" background="images/fillupleft.jpg"><h:graphicImage value="images/aboutus_20.jpg" width="18" height="314"></h:graphicImage></td>
+                        <td valign="top" background="images/aboutus_21.jpg"><table width="840" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="content1"><div align="justify"><strong><span class="headblue"><h:outputLink id="top"></h:outputLink>Office of the Vice-Chancellor</span></strong></div>
+                                            <div align="justify">
+                                                <ul>
+                                                    <li><h:outputLink value="#Main" class="headblue">Main Office</h:outputLink></li>
+                                                    <li><h:outputLink value="" class="headblue">Registry</h:outputLink></li>
+                                                    <li><h:outputLink value="bursary.xhtml" class="headblue">Bursary</h:outputLink></li>
+                                                    <li><h:outputLink value="#APU" class="headblue">Academic Planning Unit</h:outputLink>
+                                                        <ul>
+                                                            <li><h:outputLink value="#APU" class="headblue">Academic Programme Planning Section</h:outputLink></li>
+                                                        </ul>
+                                                        <ul>
+                                                               <li><h:outputLink value="#EDPS" class="headblue">Electronic Data Processing Section</h:outputLink></li>
+                                                               <li><h:outputLink value="#ARPS" class="headblue">Academic Resource Planning Section</h:outputLink></li>
+                                                               <li><h:outputLink value="#IRS" class="headblue">Institutional Research Section</h:outputLink></li>
+                                                               <li><h:outputLink value="#SSS" class="headblue">Secretarial Service Section</h:outputLink></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><h:outputLink value="#EU" class="headblue">Office of Advancement</h:outputLink>
+                                                        <ul>
+                                                               <li><h:outputLink value="#Intro" class="headblue">Introduction</h:outputLink></li>
+                                                               <li><h:outputLink value="#Categories" class="headblue">Historical Background</h:outputLink></li>
+                                                               <li><h:outputLink value="#Others" class="headblue">Endowment&nbsp; Activities of Office of Advancement</h:outputLink></li>
+                                                               <li><h:outputLink value="#EFMB" class="headblue">Advancement Board</h:outputLink></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><h:outputLink value="#Estate" class="headblue">Estate Unit</h:outputLink></li>
+                                                    <li><h:outputLink value="#IAU" class="headblue">Internal Audit Unit</h:outputLink></li>
+                                                    <li><h:outputLink value="#PAD" class="headblue">Media and Corporate Affairs</h:outputLink></li>
+                                                    <li><h:outputLink value="#PDU" class="headblue">Works and Physical Planning Unit</h:outputLink></li>
+                                                    <li><h:outputLink value="#ARU" class="headblue">Alumni Relations Unit</h:outputLink></li>
+                                                    <li>Legal Unit</li>
+                                                    <li><h:outputLink value="#SU" class="headblue">Security Unit</h:outputLink></li>
+                                                    <li><h:outputLink value="#REC" class="headblue">Records Unit</h:outputLink></li>
+                                                    <li><h:outputLink value="#" class="headblue">Centre for Information and Technology System</h:outputLink></li>
+                                                    <li><h:outputLink value="#SHMC" class="headblue">Senate House Management Committee</h:outputLink></li>
+                                                </ul>  
+                                            </div>  
+                                            <p align="justify">The Vice-Chancellor is the Chief Executive of the University and he oversees the administration of the entire University community.</p>
+                                            <p align="justify">The Deputy Vice-Chancellor (Administration) and Deputy Vice-Chancellor (Academics and Research) assist the Vice-Chancellor with the 
+                                                general administration of the University. The two Deputy Vice-Chancellors handle matters referred or specifically assigned to them by the Vice-Chancellor.
+                                                and act for the Vice-Chancellor in his absence.</p>
+                                            <p align="justify">The Vice-Chancellor's Office comprises the following units: the Main Office, Academic Planning Unit. Alumni Relations Unit. Endowment 
+                                                Unit. Physical Development Unit and the Legal Unit. Others are the Public Affairs Department (which consists of the Information. Protocol and Passages
+                                                Units), The latest additions include the Student Affairs Division which was excised from the Registry in 1995, the Documentation Unit. Staff Welfare Unit, 
+                                                Unilag Ventures, Human Resources Development Board and the Unilag Property Development and Management Board, The following units have also been established 
+                                                within the Vice-Chancellor's Office:</p>
+                                            <div align="justify">
+                                            <ul>
+                                                <li>Work and Study Programme</li>
+                                                <li>Pre-Degree Programme; and</li>
+                                                <li>Foundation Programmes Board</li>
+                                            </ul>
+                                            </div>
+                                            <h4 align="justify"><h:outputLink class="headblue" id="Main"></h:outputLink><span class="headblue">Main Office [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></h4>
+                                            <p align="justify">The Main Office of the Vice-Chancellor operates under the supervision of the Deputy Registrar to the Vice-Chancellor. The office provides direct administrative support to 
+                                                the Vice-Chancellor in the obviously onerous task of coordinating the' duties of the University chief administrative and academic officers who are responsible to the Vice Chancellor, 
+                                                The Main Office also serves as the departmental office for all the units under the direct supervision of the Vice-Chancellor. and operates in concert with the Public Affairs Department
+                                                in the area of protocol, public relations and information.</p>
+                                            <h4 align="justify"><h:outputLink id="APU"></h:outputLink><span class="headblue">Academic Planning Unit [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></h4>
+                                            <p align="justify">The Academic Planning Unit is headed by a Professor as Director who is directly responsible to the Vice-Chancellor for the day-to-day administration of the Unit. 
+                                                The Unit assists and advises the Vice-Chancellor on matters relating to the academic planning of the University, including issues pertinent to staff development programmes.
+                                                As a quality control unit of the University, it provides guidance on the operation of the academic brief of the University on the admission of students according to NUC 
+                                                guidelines, University Administration, Facilities. Student's Welfare and Social Life</p>
+                                            <p align="justify">The Academic Planning Unit:</p>
+                                            <div align="justify">
+                                            <ul>
+                                                <li>ensures the provision of a conducive teaching, learning and research environment for staff and students</li>
+                                                <li>ensures efficient and effective utilisation of academic resources</li>
+                                                <li>enhances the conformity of the University with international standards</li>
+                                                <li>promotes the quality of teaching and learning in the University</li>
+                                                <li>collates information on and co-ordinates the conduct of NUC-funded research</li>
+                                                <li>prepares and revises the academic brief of the University</li>
+                                                <li>evaluates proposals for new academic programmes for submission to the Academic Planning Committee, Senate and the NUC</li>
+                                                <li>maintains computer-based databanks including enrolment statistics for use in planning, budgeting and other management requirements</li>
+                                                <li>assesses the University's compliance with NUC guidelines on academic standards and performance, including accreditation, as well as the allocation of funds</li>
+                                                <li>The unit also serves as the focal point of liaison between the university and the NUC with regard to institutional and and national policies on higher education</li>
+                                             </ul>
+                                        </div>
+                                            <p align="justify">The Unit studies and analyses how the University and the Units within it are complying with NUC parameters for funds allocation/performing on relevant 
+                                                items of the University performance audit including accreditation.</p>
+                                            <p align="justify">It also obtains up-to-date, relevant and accurate data for processing and/or for generating relevant information to guide University Management for
+                                                accurate and timely decision making on University matters. Such data include staff and student records, financial records, research output, etc.</p>
+                                            <p align="justify">It constitutes the focal point of liaison with the National Universities Commission with regard to institutional and national policies on 
+                                                higher education. In this regard, it is involved, inter alia, with the preparation of recurrent submissions and planning for the University.</p>
+                                            <p align="justify">The Unit has five major sections in line with guidelines of the NUC:</p>
+                                            <h4 align="justify"><h:outputLink id="EDPS"></h:outputLink><span class="headblue">Electronic Data Processing Section [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></h4>
+                                            <p align="justify">The Electronic Data Processing Section is responsible for data collection and analysis with regard to various facets of the University development, to cater for the needs of the
+                                                University and of external bodies, such as the National Universities Commission, collection and storage of publications of statistical nature from other University, documenting and storing 
+                                                information on the academic programmes of the University, analysis and interpretation of University annual and trend statistics as well as publication of University records and statistics.</p>
+                                            <h4 align="justify"><h:outputLink id="ARPS"></h:outputLink><span class="headblue">Academic Resource Planning Section [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></h4>
+                                            <p align="justify">This section is responsible for the collection, analysis and interpretation of data from relevant University bodies, provision of database information on University academic/material
+                                                resources and University facilities, periodic updates and analysis of data from relevant University bodies for the internal evaluation of the performance status of the University on all NUC-approved 
+                                                funding parameters and other guidelines as well as annual updating, projection, analysis and interpretation of data for the planning and preparation of the University budget and the subsequent resource
+                                                allocation within the ambit of the approved budget. It also ensures that the University complies with and maintains standard, through passing necessary information to departments and the University at 
+                                                large, on the NUC's minimum academic standards. It participates in University curricula revision and/or review activities as well as ensures that the University. complies with procedures and guidelines
+                                                on the establishment of new programmes and helps the University in producing and /or reviewing long-term, medium-term and short-term academic briefs and/or plans, and the modeling of such plans against
+                                                reality and University goals.</p>
+                                            <h4 align="justify"><h:outputLink id="IRS"></h:outputLink><span class="headblue">Central Institutional Research Section [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></h4>
+                                            <p align="justify">This section administers and co-ordinates research projects and programmes within the University, prepares research materials/papers on the basis of data supplied to it from the resource
+                                                planning section and publishes research reports. This section monitors the progress of research projects and the utilization of the funds after an allocation has been made through the analysis of progress
+                                                reports and end-of-project reports. It provides guidance on submission of Annual Research reports and Research Fund allocation and Utilization reports to the NUC. It so ensures that research funds are 
+                                                channeled back to University activities for improvement purposes.</p>
+                                            <h4 align="justify"><h:outputLink id="SSS"></h:outputLink><span class="headblue">Secretarial Service Section [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></h4>
+                                            <p align="justify">Secretarial Service Section undertakes secretarial duties, management of the general office, secretaryship of the Academic Planning Committee, the Development and the
+                                                Central Research Committees.</p>
+                                            <h4 align="justify"><h:outputLink id="EU"></h:outputLink><span class="headblue">Office of Advancement [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></h4>
+                                            <h4 align="justify"><h:outputLink id="Intro"></h:outputLink><span class="headblue">Introduction [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></h4>
+                                            <p align="justify">The University of Lagos Endowment Fund was first launched in 1972 on the occasion of the 10th Anniversary of the founding of the Institution. The University authorities had realised as at 
+                                                that early stage, that while the Federal Government would inevitably continue to be a major source of funding of the University, there was need to establish a fund which would provide an 
+                                                independent source of income. The University had of course always received assistance from organisations and individuals in the form of benefactions, endowed prizes, equipments and staff 
+                                                development; the establishment of endowed fund was intended to provide a means by which cash donations could be invested to produce a regular source of income for the University.</p>
+                                            <h4 align="justify"><h:outputLink id="Categories"></h:outputLink><span class="headblue">Historical Background [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></h4>
+                                            <p align="justify">The formal establishment of the Alumni Relations Office in 1977 gave credence to the importance of the alumni in fostering the growth and development of the University. 
+                                                In its effort to mobilize and keep its alumni together as a body, the University placed advertisements in the national dailies in 1968 calling on its graduates to submit their names and 
+                                                addresses to the Student Affairs Office. The purpose was to use the medium to sensitize the alumni towards coming together to play contributory roles to their alma mater. With this 
+                                                encouragement and the full support of the University, the Alumni Association was formally launched in 1970. Consequently, the establishment of the Alumni Relations Unit became inevitable.</p>
+                                            <p align="justify">In 1977, the Alumni Relations Unit was created under the Registry. The unit was established basically to provide a channel of communication between the University and its alumni 
+                                                all over the country and in diaspora as well as build an alumni association, for the benefit of the University as well as the National Association. The unit was also expected to encourage the 
+                                                formation of branch associations, create a favourable working relationship with the Alumni Association's national office through its officers and cultivate a friendly relationship with the alumni
+                                                members all over the world. The unit was further expected to give the alumni association a supporting hand particularly in prosecuting programmes that are beneficial to the University and sensitize
+                                                alumni members towards identifying with their alma mater.</p>
+                                            <p align="justify">The University of Lagos Endowment Fund was re-launched at the Silver Jubilee of the University in November, 1987. It became clear that while donations to the fund from organisations
+                                                and individuals would continue to be most welcome, the need had arisen for the University to consciously seek aid for special projects. It was this need that motivated the University to create the Endowment
+                                                Committee and an Endowment Unit in 1987 with the mandate to solicit for support from individuals and organisations by way of donations and endowment of projects in the University. The Endowment Committee also 
+                                                organised a third re-launching of the fund in February 1992, while the $500 million Endowment Fund was launched in 2003.</p>
+                                            <p align="justify">In 1989, the Endowment Unit was eventually merged with the Alumni Relations Unit resulting in the birth of the Alumni and Endowment Unit, under the VIce-Chancellors Office, for the purpose of
+                                                using the alumni along with other philanthropists and benefactors to generate endowment funds for the University. The operation of the department was designed to bring the alumni into the new challenge of 
+                                                seeking aid for special projects. The Alumni and Endowment Unit then had the mandate to solicit for support from the individuals and organizations by way of donations and endowment of projects in the University.&nbsp; 
+                                                The Unit was separated again in 1998 into autonomous Endowment Unit and Alumni Relations Unit.&nbsp; However, the two Units were later merged and renamed Development Office in 2003.</p>
+                                            <p align="justify">However, in line with global trends and based on the need to reposition and rebrand the University’s alumni and endowment activities, the name of the Unit was changed to the Office of Advancement in 2009.&nbsp; The
+                                                Department now has the following units: Advancement Operations, Gift Administration, Alumni and Public Relations Units.&nbsp;</p>
+                                            <p align="justify"><h:outputLink id="Others"></h:outputLink><span class="headblue">Endowment Activities of Office of Advancement [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></p>
+                                            <p align="justify">Educational Advancement is devoted to the strategic and integrated management of long–term relationship with constituencies such as Alumni, Friends, Staff, Students, Government Agencies, Foundations, 
+                                                Individuals and Corporate organizations for the purpose of attracting additional funding and other forms of support for the development of the institution. Endowment is the total support of a particular project 
+                                                including its maintenance in perpetuity. Thus, in addition to the initial cost of the project, a lump sum is invested in an interest-yielding bank account, the proceeds of which are used for maintaining the project
+                                                over time. It has been established that this arrangement is most appropriate and beneficial both for the University which would never run out of funds to maintain the project, and for the donor whose name will 
+                                                continue to be associated with the project. Hence endowment is not just a modern idea, it is a sensible idea because of its enduring value.</p>
+                                            <p align="justify"><h4><strong>General Endowments</strong></h4></p>
+                                            <p align="justify">The result of all these University-wide efforts has been the creation of what has come to be known as general endowments, i.e. those for the general development of the University.</p>
+                                            <p align="justify">General endowment as the name connotes covers all forms of donation in form of cash, educational materials, etc. for the general development of the University. No specific amount is usually attached to 
+                                                this category of endowment as no amount is considered too small or too heavy in this circumstance.</p>
+                                            <p align="justify"><h4><strong>Professorial Chairs</strong></h4></p>
+                                            <p align="justify">A second category of endowments exemplified by the establishment of professorial chairs based on trust funds offered by well-meaning individuals, result from fundraising programmes of sub-institutions 
+                                                such as Faculties and Departments in response to specific needs and projects.</p>
+                                            <p align="justify">For the establishment of a Professorial Chair, a prospective endower is expected to donate for investment an adequate amount that would yield enough interest (based on the prevailing bank rates) to service 
+                                                the Chair in perpetuity. This interest that would accrue from the invested sum is estimated at <s style="text-line-through:double">N</s>15,000,000 and would take care of the Professors annual salary, salaries of his supporting staff, annual lectures/seminars,
+                                                and any other incidentals.</p>
+                                            <p align="justify"><h4><strong>Staff Giving</strong></h4></p>
+                                            <p align="justify">Following the appeal by the Office of Advancement through the Vice-Chancellor, many staff of the University have undertaken to donate to the University through the Staff (Check-Off) Endowment Fund Scheme.&nbsp; This is done by giving a 
+                                                standing order to the Bursar to deduct a certain amount from the monthly salary and paid into the University of Lagos Endowment Fund for a given period of time.&nbsp; We appreciate the contributions of the staff who are already part of the Scheme even
+                                                as we appeal to others to assist the University’s development efforts by joining the scheme.&nbsp; It is noteworthy that this scheme is optional.</p>
+                                            <p align="justify">Apart from the Staff Check-Off Scheme, many members of staff have donated various amounts to the University.&nbsp; This 
+                                                is also highly appreciated by the University.</p>
+                                            <p align="justify"><h4><strong>Alumni Giving</strong></h4></p>
+                                            <p align="justify">An alumnus/alumna of the University can make a difference by making outstanding contributions to the department, faculty or the University. Such donations whether large or small will make tremendous difference in the life of the University.
+                                                Funds raised from alumni and other donors have assisted the University in executing various projects such as hostel building, auditoria, lecture theatre etc. It has also assisted the students in the form of endowment scholarship awards in five major categories:</p>
+                                            <p align="justify"><strong><li>academically brilliant students</li></strong></p>
+                                            <p align="justify"><strong><li>indigent students</li></strong></p>
+                                            <p align="justify"><strong><li>students with outstanding leadership qualities</li></strong></p>
+                                            <p align="justify"><strong><li>outstanding sportsmen and women</li></strong></p>
+                                            <p align="justify"><strong><li>physically challenged students</li></strong></p>
+                                            <h4 align="justify"><h:outputLink id="IAU"></h:outputLink><span class="headblue">Internal Audit Unit [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></h4>
+                                            <p align="justify">The Internal Audit became functional first as a section of the Bursary in November, 1965, manned only by an audit clerk. At that time, the scope of work of the 
+                                                Unit was only to serve as a checker of documents emanating from the Bursary. As the University grew, the scope of responsibility of the Unit expanded with it. The Internal 
+                                                Audit Unit consequently assumed its rightful role - that of being the strongest internal control outfit in the system.</p>
+                                              <p align="justify">Thus the Unit is charged with the following duties and responsibilities .which evolved over the years of its existence:</p>
+                                            <div align="justify">
+                                           <ol>
+                                               <li>Reviewing and appraising the soundness, adequacy and application of accounting, financial and other operating controls, and promote effective control at reasonable cost</li>
+                                               <li>Ascertaining the extent of compliance with established policies, regulations, plans and procedures</li>
+                                               <li>Ascertaining the extent of which the Institution's assets are accounted for and safeguarded from losses of all kinds</li>
+                                               <li>Ascertaining the reliability of management data developed within the system</li>
+                                               <li>Appraising the quality of performance in carrying out the assigned responsibilities</li>
+                                               <li>Informing and advising management as appropriate and in line with professional practice</li>
+                                               <li>Coordinating the Units so as to best achieve the audit objectives and the overall objectives of the Institution</li>
+                                           </ol>
+                                           </div>
+                                              <p align="justify">The Unit is now under the Vice-Chancellor's Office, and the-head reports directly to the Vice-Chancellor.</p>
+                                              <h4 align="justify"><h:outputLink id="PAD"></h:outputLink><span class="headblue">Media and Corporate Affairs [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></h4>
+                                              <p align="justify">This Department was created in 1997 as one of the departments in the Vice-Chancellor's Office. In fact, it was a fusion of the Information, Protocol and Passages Units. The department is headed by a Director who reports directly to the Vice-Chancellor.</p>
+                                              <h5 align="justify" class="headblue">Mission and Stated Objectives</h5>
+                                              <p align="justify">The Department of Public Affairs constitutes the ear and eye of the institution in terms of its activities
+                                                  which, basically, are public relations.</p>
+                                              <p align="justify">It is the objective of the Department to consolidate on its present strategies and methods of reaching out effectively and efficiently to the various publics of the University 
+                                                  in the years ahead, particularly in the areas of media, community, government. and international relations.</p>
+                                              <p align="justify">In this regard, the Department plans to train and retrain its professional personnel as appropriate. The Passages Unit staff, currently located in the prefabricated 
+                                                  building housing the Department of Psychology, will soon move to join their counterparts in the Information Unit on the 8th Floor of the Senate House. At present, the Protocol Unit
+                                                  personnel are on the 10th Floor. It is expected that location of staff in close proximity with the university administration would enhance consultation, performance and service delivery.</p>
+                                              <p align="justify">With regard to office machinery and equipment, the Department, like other departments of the University, has recently acquired a computer system which should enhance and assist 
+                                                  in meeting its challenges. Plans are also underway to have a very formidable Photo Section as soon as it is provided with film processing and printing equipment.</p>
+                                              <h5 align="justify" class="headblue">The Information Unit</h5>
+                                              <p align="justify">The Information Unit of the Department is responsible for creating tangible public relations and sustaining public understanding and support on a systematic basis for the University. The Unit facilitates free flow of information between the
+                                                  University and its various publics. The Unit, therefore, strives to achieve the following:</p>
+                                              <div align="justify">
+                                              <ol>
+                                             <li>stimulate a better understanding of the policies and character of the University within the community;</li>
+                                             <li>create public awareness of the University's need for greater social and financial support on a regular basis;</li>
+                                             <li>ensure that the University, as a corporate body, maintains cordial relations wi.th its corporate and individual neighbours;.</li>
+                                             <li>create and sustain public awareness of the University's enviable record and image of academic excellence</li>
+                                             <li>uphold positive media relations practice</li>
+                                              </ol>
+                                              </div>
+                                              <p align="justify">The following publications serve as instruments for achieving the above goals:</p>
+                                              <div align="justify">
+                                              <ol>
+                                                     <li>Information Flash (ISSN 0819- 5540) - weekly.</li>
+                                                     <li>Campus News (ISSN 0819 - 5559) - weekly.</li>
+                                                     <li>Press releases - occasionally.</li>
+                                                      <li>Newspaper and radio advertisements.</li>
+                                                    <li>Unilag Today News Magazine published quarterly. (Has its own Editorial Board).</li>
+                                                     <li>University Calendar - published occasionally.</li>
+                                                     <li>Vice-Chancellor's Speeches (ISSN 978 - 2390 - 2400) - occasionally.</li>
+                                                     <li>Daily media reports for internal circulation among principal officers.</li>
+                                                     <li>Press conference and related media functions.</li>
+                                               </ol>
+                                               </div>
+                                                     <p align="justify">The Unit is complemented by a Photographic Section which undertakes 
+                                                         pictorial coverage of University events for record purposes.</p>
+                                                     <p align="justify">In addition. the Unit introduced in 1995 an Information Point
+                                                         service located on the ground floor of the Senate House where members of the public. 
+                                                         including visitors. staff and students. can obtain first-hand information about activities on campus.
+                                                         The Unit also has a TV/Video Centre for viewing of staff and students.</p>
+                                                     <p align="justify">The Unit also operates information retrieval service for the collation and
+                                                         preservation of information materials. Ultimately. members of the University community have easy 
+                                                         access to information published in past publications. The Documentation Room also serves as a 
+                                                         picture library where photographs of various events and ceremonies are stored.</p>
+                                                     <p align="justify">The Documentation Room is the reception room for members of staff to check for 
+                                                         international job vacancies, fellowships, etc. announced by foreign universities and international 
+                                                         organisations such as the International and Economic Commission for Africa.</p>
+                                                     <p align="justify">The Unit ensures regular exchange of information between the University of Lagos
+                                                         and embassies. agencies of the United Nations. universities abroad, etc. News items about research 
+                                                         breakthroughs and other news-worthy activities about the University are sent to the Association of 
+                                                         African Universities and other bodies for publication in their bulletins.</p>
+                                                     <p align="justify">The World of Learning is also furnished with information about the University, 
+                                                         its facilities, staff and students.</p>
+                                                     <p align="justify">Exchange of publications between the University of Lagos and other Universities
+                                                         abroad is undertaken by the Information Unit.</p>
+                                                     <h5 align="justify" class="headblue">The Passages Unit</h5>
+                                                     <p align="justify">This Unit performs the following duties:</p>
+                                                     <div align="justify">
+                                                     <ol>
+                                                         <li>Processing importation and clearance of goods for the University, including establishment of letters of credit.</li>
+                                                         <li>Booking and issuance of flight tickets to University staff traveling overseas or locally.</li>
+                                                         <li>Arranging airport reception for the Principal Officers with respect to their Comfort.</li>
+                                                         <li>Processing issuance of Entry/transit Visas and/or arranging Visa appointments at various embassies and foreign missions.</li>
+                                                         <li>Processing Resident Permits for foreign staff and students.</li>
+                                                         <li>Processing issuance of Nigerian passports and other travel documents.</li>
+                                                      </ol>
+                                                     </div>
+                                                            <h4 align="justify" class="headblue">The Protocol Unit</h4>
+                                                            <p align="justify">The Unit assists in facilitating the outreach efforts of the Vice-Chancellor by contacting people and places as directed by the Chief Executive from time to time.</p>
+                                                            <p align="justify">The Unit operates a fleet of motor vehicles for the official use of University Council members as well as other top functionaries of the University.</p>
+                                                            <p align="justify">The Unit also has the onerous responsibility of organising and arranging University events without let or hindrance and such activities have increased tremendously in recent times.</p>
+                                                            <h4 align="justify"><h:outputLink id="PDU"></h:outputLink><span class="headblue">Works and Physical Planning Unit [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></h4>
+                                                            <p align="justify">The Physical Development Unit was established in May 1982 as the University's 'Internal Consultants Unit' to advise on capital project and liaise with external consultants. where necessary.
+                                                                Within the framework of an NUC approved master plan, the Unit prepares development programmes, monitors and co-ordinates physical development activities for the University.</p>
+                                                             <p align="justify">The implementation of the University master-plan is a major responsibility of the Unit. Hence, it ensures that any development within the University strictly conforms with the provisions of the master-plan while allowing for 
+                                                             flexibility where necessary. Consequently, it guarantees maximum and efficient utilization of scarce land resources to meet the University's academic aspirations.</p>
+                                                        <p align="justify">With its professional staff, the Unit reviews University's building stock and infrastructural facilities to determine performance. For future purposes and development, the University had adopted two types
+                                                            of academic buildings. They are the Arts-type building and the Science and Technology-type buildings. The former will accommodate faculties such as Arts, Social Science, Business Administration, etc. while the 
+                                                            latter will accommodate faculties such as Science, Environmental Sciences, Engineering, etc. The .proposed buildings will enhance the achievement of the 60: 40 ratio for Science/Technology and Arts as recommended by NUC. 
+                                                            The Unit is headed by a Director, who is responsible to the. Vice Chancellor.</p>
+                                                            <h4 align="justify"><h:outputLink id="ARU"></h:outputLink><span class="headblue">Alumni Relations Unit [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></h4>
+                                                            <h4 align="justify"><h:outputLink id="SWAB"></h:outputLink><span class="headblue">Staff Welfare Advisory Board [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></h4>
+                                                            <p align="justify">The welfare of staff has traditionally been under the Personnel Division of the <br></br>
+                                                          Registry. The last Administration decided that for effective delivery of welfare, a separate Board reporting directly to the Vice-Chancellor, was necessary. This decision was informed by the Administration's wish to make staff welfare delivery a cardinal point, 
+                                                          particularly at a time when staff were feeling the pinch of the economic down-turn.</p>
+                                                            <h4 align="justify"><h:outputLink id="SU"></h:outputLink><span class="headblue">Security Unit [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></h4>
+                                                            <p align="justify">The Security Unit is now part of the Vice-Chancellor's office. It has undergone far reaching re-organisation with a view to improving the general security of life and property on the University campus. The day-to-day administration of 
+                                                                the Unit is vested in a Chief Security Officer who is responsible to the Vice-Chancellor.</p>
+                                                            <h4 align="justify"><h:outputLink id="REC"></h:outputLink><span class="headblue">Records Office [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></h4>
+                                                            <div align="justify"><strong>Introduction<br></br>
+                                                                </strong></div>
+                                                               <p align="justify">&nbsp;</p> 
+                                                               <ul>
+                                                           <li>
+                                                               <p align="justify">The Records Office, headed by a Deputy Registrar, is responsible for keeping the academic records of all students since the inception of the University. It also issues results to students from time to time.</p>
+                                                               <p align="justify">Other functions of the Unit are as follows:</p>
+                                                           </li>
+                                                            <li>
+                                                          <div align="justify">Issuance of Transcripts on request from Students. The student applied for transcript and after the payment of the prescribed fees, submits the application to the Records Office. The application must state 
+                                                              clearly the applicants matriculation number, date of birth, years of attendance in the University, course of study, the qualification(s) obtained from the University and the address to which the transcript should be forwarded.</div>
+                                                            </li>
+                                                           <li>
+                                                            <div align="justify">Employers and institutions often request for Academic confidential reports to authenticate the various claims made by our graduates. The Records office attends to such requests.</div>
+                                                            </li>
+                                                           <li>
+                                                           <div align="justify">Employers and Institutions also refer students results to the University for verification. The Records office processes such request with dispatch.</div>
+                                                            </li>
+                                                            <li>
+                                                           <div align="justify">Presently, the Records office is involved in the mobilization of students for NYSC by preparing and forwarding to the Dean of Students Affairs the list of eligible candidates (graduating students) for Service.</div>
+                                                           </li>
+                                                        </ul>
+                                                               <p align="justify">&nbsp;</p>
+                                                               <h4 align="justify"><h:outputLink id="SHMC"></h:outputLink><span class="headblue">Senate House Management Committee [ <h:outputLink class="headblue" value="#top">top</h:outputLink> ]</span></h4>
+                                                               <p align="justify">The decision to set up this committee was taken in 1984 in recognition of the need to guarantee the security and upkeep of the imposing Senate House Complex. The Unit consists of specially trained personnel whose major tasks include cleaning of the building, maintenance of its electrical installations, fire fighting, the two elevators, and the central and unit air-conditioning systems.</p>
+                                                       <p align="justify">The central pool from which requisitions are made for both cleaning materials and equipment is headed by a Chief Technical Officer.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                
+                            </table>
+                            
+                        </td>
+                        <td valign="top" background="images/fillupright.jpg"><h:graphicImage value="images/aboutus_22.jpg" width="18" height="314"></h:graphicImage>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><h:graphicImage value="images/aboutus_37.jpg" width="876" height="18"></h:graphicImage>
+                            
+                        </td> 
+                    </tr>
+                </tbody>
+            </table>
+            
+        </td>
+        <td>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style=" background-image: url('images/index_29b.jpg'); background-repeat:  repeat-x">
+                <tr>
+                    <td width="5%"><h:graphicImage value="images/spacer1.gif" width="57" height="20"></h:graphicImage></td>
+                    <td width="85%">&nbsp;</td>
+                    <td width="11%"><div align="right"><h:graphicImage value="images/spacer1.gif" width="120" height="20"></h:graphicImage></div></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="17%" valign="top"><table width="160" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">About Us</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Principal Officers</h:outputLink></td>
+                                        </tr>
+                                        
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Welcome Address</h:outputLink></td>
+                                        </tr>
+                                        
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Vision and Mission</h:outputLink></td>
+                                        </tr>
+                                        
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Our History</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Administration</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Registrar</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Principal Officers</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Bursary</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Student Affairs</h:outputLink></td>
+                                        </tr>    
+                                    </table>
+                                </td>
+                                <td width="18%" valign="top"><table width="170" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">Communities</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Professional Bodies</h:outputLink></td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Academic Planning Unit</h:outputLink></td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Staff Training Center</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Staff School</h:outputLink></td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Community Pharmacy</h:outputLink></td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Security Center</h:outputLink></td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">GST</h:outputLink></td>
+                                        </tr> 
+                                        
+                                    </table>
+                                    
+                                </td>
+                                
+                                <td width="18%" valign="top"><table width="170" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">Academics</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">College of Medicine</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Faculties</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">School of Post Graduate Studies</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Academic Program</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Academic Calender</h:outputLink></td>
+                                        </tr>
+                                        
+                                    </table>
+                                    
+                                </td>
+                                
+                                <td width="14%" valign="top"><table width="130" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">Media</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Latest News</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Archived News</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Notices</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Magazine</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">FAQ</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Downloads</h:outputLink></td>
+                                        </tr>
+                                        
+                                    </table>
+                                    
+                                </td>
+                                
+                                <td width="19%" valign="top"><table width="170" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">Publications</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Register for the Research Conference</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">View Publications</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Search Publications</h:outputLink></td>
+                                        </tr>
+                                        
+                                    </table>
+                                    
+                                </td>
+                                
+                                <td width="14%" valign="top"><table width="110" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">Contact Us</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Contact Details</h:outputLink></td>
+                                        </tr>
+                                        
+                                    </table>
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        </table>
+                        
+                    </td>
+                    <td valign="top"><h:graphicImage value="images/socialnt.jpg" width="100" height="100" usemap="#map2"></h:graphicImage></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><h:graphicImage value="images/spacer1.gif" width="120" height="20"></h:graphicImage></td>
+                </tr>
+                
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="10%" class="footer">Contact</td> 
+                                <td width="15%" class="footer">Privacy</td> 
+                                <td width="15%" class="footer">Terms of Use</td> 
+                                <td width="39%" class="footer">Accessibility</td> 
+                                <td width="40%" class="footer"><div align="right">powered by Enesoft Technologies 2013</div></td> 
+                            </tr>
+                            
+                        </table>
+                        
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+            
+        <map name="Map2"> 
+            <area shape="rect" coords="38,5,80,47" href="#"></area><area shape="rect" coords="41,50,80,92" href="http://twitter.com/unilag_1962" target="blank"></area>
+        </map>
+    </h:body>
+</html>
+

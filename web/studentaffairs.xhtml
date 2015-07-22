@@ -1,0 +1,576 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Student Affairs Page</title>
+        <style type="text/css">
+body {
+     font: 10pt Verdana, Arial, Georgia, sans-serif;
+     background-image: url('images/aboutus_16.jpg');
+     background-repeat: repeat-x;
+     margin-left: 0px;
+     margin-top: 0px;
+     margin-right: 0px;
+     margin-bottom: 0px;
+}
+#nav {
+      width:150px;
+      float:left;
+      margin-top:12px;
+      margin-right:18px;
+      text-decoration: none;
+}
+#content {
+         width:1000px;
+         float:left;
+         font: 12px Verdana, Arial, Georgia, sans-serif;
+         color:#4b545f;
+         line-height:17px;
+}
+#nav a{
+    text-decoration: none;
+}
+#content a{
+    text-decoration: none;
+    color: #4b545f;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+#content a:hover{
+    text-decoration:  underline;
+}
+#nav ul{
+    list-style: none;
+    margin: 12px 0px 0px 0px;;
+    padding: 0px;
+}
+#nav ul li{
+    border-bottom: 1px solid #ffffff;
+}
+#nav ul li a:link, #nav ul li a:visited{
+    font-size: 10pt;
+    font-weight: bold;
+    display: block;
+    padding: 3px 0px 3px 3px;
+    background-color: #628794;
+    color: #ffffff;
+}
+#nav ul li a:hover, #nav ul li a:active{
+    font-size: 10pt;
+    font-weight: bold;
+    display: block;
+    padding: 3px 0px 3px 3px;
+    background-color: #c6a648;
+    color: #000000;
+}
+#nav ul ul{
+    margin: 0px;
+    padding: 0px;
+    display: none;
+}
+#nav ul li:hover > ul{
+    display: block;
+}
+#nav ul ul li{
+    border-bottom: none;
+}
+#nav ul ul li a:link, #nav ul ul li a:visited{
+    font-size: 8pt;
+    font-weight: bold;
+    display: block;
+    padding: 3px 0px 3px 18px;
+    background-color: #628794;
+    color: #ffffff;
+}
+#nav ul ul li a:hover, #nav ul ul li a:active{
+    font-size: 8pt;
+    font-weight: bold;
+    display: block;
+    padding: 3px 0px 3px 18px;
+    background-color: #c6a648;
+    color: #000000;
+}
+td{
+ color: #ffffff; 
+ font: 8pt Verdana; 
+}
+td a{
+    color: #CCCCCC;
+    text-decoration: none;  
+}
+td a:hover{
+    text-decoration: underline;
+}
+td.footerheader{
+   color: gold; 
+   font-weight:  bolder;
+   font: 12pt Verdana;   
+}
+td.footercontent{
+    color: #FF0000;
+    font-weight: normal; 
+}
+td.footer{
+    color: #CCCCCC;
+}
+</style>
+    </h:head>
+    <h:body>
+<h:graphicImage value="images/about.jpg" width="1349" height="170"></h:graphicImage>
+        <br></br>
+        <div id="nav">
+            <ul>
+                <li><h:outputLink value="homepage.xhtml">Home Page</h:outputLink></li>
+                <li><h:outputLink value="#">Mission</h:outputLink></li>
+                <li><h:outputLink value="#">History</h:outputLink></li>
+                <li><h:outputLink value="#">Lecturers</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="#">&raquo; Senior Lecturers</h:outputLink></li>
+                        <li><h:outputLink value="#">&raquo; Junior Lecturers</h:outputLink></li>
+                        <li><h:outputLink value="#">&raquo; Lab Attendants</h:outputLink></li>
+                        <li><h:outputLink value="#">&raquo; Professors</h:outputLink></li>
+                    </ul>
+                </li>
+                <li><h:outputLink value="#">Contact Us</h:outputLink></li>
+            </ul>
+        </div>
+        <br></br>
+        <h2><center>Student Affairs Division</center></h2>
+        <div id="content">   
+            <p align="justify">On this page: <h:outputLink id="top"></h:outputLink></p>
+            <ul>
+                <li><h:outputLink value="#Intro">Introduction</h:outputLink></li>
+                <li><h:outputLink value="#HA">Hostel Accommodation</h:outputLink></li>
+                <li><h:outputLink value="#CU">Counseling Unit</h:outputLink></li>
+                <li><h:outputLink value="#SAU">Students Activities Unit</h:outputLink></li>
+                <li><h:outputLink value="#ILSBU">Identification, Loans, Scholarships and Bursaries Unit</h:outputLink></li>
+                <li><h:outputLink value="#SFA">Scholarships and Financial Aid</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="#PG">Postgraduate</h:outputLink></li>
+                        <li><h:outputLink value="#UG"> Undergraduate</h:outputLink></li>
+                    </ul>
+                </li>
+                <li><h:outputLink value="#WSJP">Work Study and Job Placement</h:outputLink>
+                    <ul>
+                        <li><h:outputLink value="#OBJ">Objectives</h:outputLink></li>
+                        <li><h:outputLink value="#Op">Operations</h:outputLink></li>
+                        <li><h:outputLink value="#EfP">Eligibility for Participation</h:outputLink></li>
+                        <li><h:outputLink value="#RP">Registration Procedure</h:outputLink></li>
+                        <li><h:outputLink value="#Rem">Remuneration</h:outputLink></li>
+                    </ul>
+                </li>
+</ul>
+            <h:outputLink id="Intro"></h:outputLink><span>Introduction [ <h:outputLink value="#top">top</h:outputLink>]</span>
+            <p align="justify">This Division of the Vice-Chancellor's Office  which deals with the coordination of student affairs is headed by a  Professor with the title "Dean of Student Affairs".
+                He reports to the  Vice-Chancellor for the efficient execution of those policies formulated  by the Students Welfare Board (a standing Committee of Senate) 
+                and  approved by the Vice-Chancellor.</p>
+            <p align="justify">The Student Affairs Office comprises the following five Units:</p>
+            <ol>
+    <li>Accommodation</li>
+    <li>Counseling</li>
+    <li>Students' Activities and International Students Affairs.</li>
+    <li>Identification, Scholarships, Loans and Bursaries</li>
+    <li>Work Study and Job Placement</li>
+</ol>
+            <p align="justify">In addition, the office takes part in the activities of all University .committees dealing with student matters.</p>
+            <h:outputLink id="HA"></h:outputLink><span>Hostel Accommodation [ <h:outputLink value="#top">top</h:outputLink> ]</span>
+            <p align="justify">The University of Lagos was primarily  conceived as a University which is expected to provide tuition to a 
+                non-residential student population. However, factors like high rent cost  of transportation and traffic have led to a 
+                review of this policy by  each succeeding University Administration. Over the years, the  University, as a humanitarian gesture,
+                has been providing accommodation  to a reasonable percentage of its student population. As of now, over  6,000 students are accommodated 
+                in our 13 Halls ,of Residence. These  include virtually all foreign students who applied for accommodation.</p>
+             <p align="justify">The priority order for allocation into the  Halls of Residence is as follows: final year students, Students' Union 
+             Executives, foreign students, sportsmen and women, and first year  students. The University's off-campus accommodation policy is'  
+             applicable to all 2nd Year students. Nevertheless, both residential and  non-residential students enjoy common on-campus facilities of catering, 
+             sports and recreation, Clubs and associations and health services.</p>
+            <h:outputLink id="CU"></h:outputLink><span>Counseling Unit [ <h:outputLink value="#top">top</h:outputLink>]</span>
+            <p align="justify">Services rendered by this Unit include:</p>
+            
+            <ol>
+                <li>Provision of Counseling assistance for students making career decisions <br></br>
+                 and/or looking for employment</li>
+                <li>Maintenance of a resource library of general occupation information and records of private and public employers</li>
+                <li>Organization of workshops and provision of career  information. teaching of job-hunting skills and preparation of  curricular vitae</li>
+                <li>Arrangement of interview programs on campus for graduating students. <br></br>
+                seeking full-time employment</li>
+            </ol>
+            <h:outputLink id="SAU"></h:outputLink><span>Students Activities Unit [ <h:outputLink value="#top">top</h:outputLink>]</span>
+            <p align="justify">This unit concentrates on all matters relating  to student activities and welfare. The unit organises elections and
+                relates to students' representatives on a day-to-day basis. The Student  Activities' Unit also handles issues with the National Youth 
+                Service  Scheme (NYSC) for graduating students. Also coordinates co-curricular  activities of students which include clubs and societies. 
+                sporting  activities, election of Student Union Executives, etc.</p>
+             <h:outputLink id="ILSBU"></h:outputLink><span>Identification, Scholarships, Loan and Bursaries Unit [ <h:outputLink value="#top">top</h:outputLink>]</span>
+             <p align="justify">The Unit coordinates matters relating to  Students' I. D. Cards, Scholarships, Loans and Bursaries for both  undergraduate and 
+                 postgraduate students.</p>
+             <h:outputLink id="SFA"></h:outputLink><span>Scholarships And Financial Aid [ <h:outputLink value="#top">top</h:outputLink>]</span>
+             
+             <h:outputLink id="PG"></h:outputLink><span>Postgraduate Scholarship[ <h:outputLink value="#top">top</h:outputLink>]</span>
+             <p align="justify">The Senate has instituted a Postgraduate  Scholarship to encourage graduate students of exceptional merit 
+                 to  undertake studies for higher degrees in this University.</p>
+             <p align="justify">The conditions of the award are as follows:</p>
+             <ol>
+                <li>The scholarships are awarded annually by the Senate on  the advice of the Scholarships, Loans and Bursaries Committee, having  considered nominations from teaching units.</li>
+                <li>Only students of the University who have obtained a  Bachelor's Degree with at least Second Class Honours (Upper Division)  or the equivalent are considered for the awards.</li>
+                <li>Senate may make more than five awards in anyone year for postgraduate studies in any recognised field.</li>
+                <li>The award covers lodging, feeding, book and equipment. The value in addition to free tuition is as follows;
+             <ul>
+                 <li>N5,750.00 (Arts)</li>
+                 <li>N7,000.00 (Science).</li>
+             </ul>
+             </li>
+             <li>The award covers the normal duration of the degree course subject to good progress report on the scholar by his supervisor.</li>
+             </ol>
+             <h5 align="justify"><h:outputLink id="UG"></h:outputLink><span>Undergraduate Awards Tenable in the University [ <h:outputLink value="#top">top</h:outputLink>]</span></h5>
+             <ol>
+    <li>African American Institute</li>
+    <li>A. G. Leventis Nig. Limited</li>
+    <li>Arney Road Tone</li>
+    <li>Association of African University</li>
+    <li>Commonwealth Scholar</li>
+    <li>Elder Dempster Agency</li>
+    <li>Gulf Oil of Nigeria Limited</li>
+    <li>International Merchant Bank (1MB)</li>
+    <li>International University Exchange Fund</li>
+    <li>Julius Berger Nigeria Limited</li>
+    <li>Mobil Oil Nigeria Limited</li>
+    <li>National Library of Nigeria</li>
+    <li>National Electric Power Authority (NEPA)</li>
+    <li>Nigerian Army and Navy Scholarship</li>
+    <li>Nigerian Breweries Limited</li>
+    <li>P. Z. and Co. Nigeria Limited</li>
+    <li>Shell B. P. Petroleum Development of Nigeria Ltd.</li>
+    <li>U.A.C. of Nigeria Limited</li>
+    <li>United Nations Development Programme (UNDP)</li>
+    <li>United States Information Services (USIS)</li>
+    <li>Van Leer Containers Co.</li>
+    <li>Nigerian Tobacco Co. Limited</li>
+    <li>Federal Cameroon Government Scholarship</li>
+    <li>Federal Republic of Germany</li>
+    <li>Mobil Exploration of Nigeria Scholarship</li>
+    <li>Nigerian Ports Authority</li>
+    <li>Elf Nigeria Limited</li>
+    <li>Standard Bank of Nigeria Limited</li>
+    <li>West African Portland Cement Co. Limited</li>
+    <li>Federal Government of Nigeria Scholarship</li>
+    <li>Federal Government of Nigeria (State) Scholarship</li>
+    <li>Seven-Up Company</li>
+    <li>Nigeria National Petroleum Company (NNPC)</li>
+    <li>The United Nigeria Insurance Company Limited (UNIC)</li>
+    <li>Nigerian Postal Services (NIPOST)</li>
+    <li>Various Philanthropists.</li>
+</ol>
+             <h:outputLink id="WSJP"></h:outputLink><span>Work-Study/Job Placement Unit [ <h:outputLink value="#top">top</h:outputLink>]</span>
+             <p align="justify">The Work-Study Program (WSP) under the  Work-Study Unit is a scheme designed to help students to reduce the  
+                 burden of financing their education.</p>
+<p align="justify">The inception of this laudable program,  first of its kind in Nigeria, at the University of Lagos has come at a 
+    time when the general economic situation in the country dictates that  students must look for ways of augmenting their finances. 
+    With increases  in the cost of living index, and resultant increases in the cost of  tertiary education, coupled with limited number
+    and value of  scholarships and bursaries, and difficulties in obtaining educational  loans, it may be near impossible for the generality
+    of students to have  access to higher education without tears.</p>
+<p align="justify">The Work-Study Program which enables  students to work on a part-time basis and earn some money in the process  is, 
+    therefore, a novel scheme capable of alleviating and cushioning the  effects of the economic environment on the quests of students for  higher education.</p>
+   <h:outputLink id="OBJ"></h:outputLink><span>Objectives [ <h:outputLink value="#top">top</h:outputLink>]</span>     
+   <ul>
+    <li>The objectives of the Work-Study Program include:</li>
+    <li>To alleviate the financial burden of students through part -time and vacation employment</li>
+    <li>To enable the generality of students appreciate the dignity of labour and the essence of working</li>
+    <li>To enable students acquire some useful work-experience while pursuing their courses of study</li>
+    <li>To expose students to the intricacies of work-life</li>
+    <li>To prepare students for gainful employment after graduation</li>
+</ul>
+   <h:outputLink id="Op"></h:outputLink><span>Operations [ <h:outputLink value="#top">top</h:outputLink>]</span>     
+       
+        <p align="justify">The Work-Study Program is wholly operated by the University.</p>
+<p align="justify">Guidelines for its operation are laid down by  the Committee on Work-Study Program in 
+    conjunction with the  Vice-Chancellor's Advisory Committee on Work Study Program. The  guidelines 
+    are implemented by the WSP Secretariat which is also  responsible for the day-to-day administration of the programme.</p>
+<p align="justify">Under the program. students are normally  placed in part-time work situations provided by the University
+    of Lagos  Central Administration and other arms of the University of Lagos.</p>
+<p align="justify">In the near future, students will also be placed with the following kinds of employers:</p>
+<ul>
+    <li>Private individuals or establishments located on the University Campus</li>
+    <li>Outside organizations for employers located within Yaba Area (during week days)</li>
+    <li>Outside organizations or employers beyond Yaba Area (during weekends).</li>
+</ul>
+<p align="justify">The Work-Study Program also provides for  the temporary full-time employment
+    of students during vacations.  Complementary to the main objectives of WSP, graduating students
+    are  also assisted in identifying prospective employers and prepared for job  interviews through 
+    seminars and workshops.</p>
+
+<h:outputLink id="EfP"></h:outputLink><span>Eligibility for Participation [ <h:outputLink value="#top">top</h:outputLink>]</span>
+<p align="justify">Participation in WSP is open to all  matriculated undergraduate and postgraduate students pursuing full-time 
+    courses at the University of Lagos. Other conditions for participation  are stated separately under Registration Participation
+    Procedure, Rules  and Regulations. and Code of Conduct Ethics of Participation.</p>
+<h:outputLink id="RP"></h:outputLink><span>Registration Participation Procedure [ <h:outputLink value="#top">top</h:outputLink>]</span>
+<p align="justify">To participate in the programme, a student is  required to complete an application form obtainable from the WSP  
+    Secretariat. The application form requires information on personal data,  type of job the student is interested in, the time of 
+    day or free  periods he or she is available to work and other data. Completed  applications are to be returned to the WSP Secretariat 
+    for processing. A  student is normally interviewed to establish his or her suitability for  the job applied for. Interviews are conducted
+    by the WSP operational  staff and members of the WSP Committee. A student who is successful at  the interview will be given a letter of 
+    employment and be required to  sign a bond before assumption of duties.</p>
+<h:outputLink id="Rem"></h:outputLink><span>Remuneration/Mode of Payment [ <h:outputLink value="#top">top</h:outputLink>]</span>
+<p align="justify">A student-worker is paid a reasonable hourly  wage, depending on the level of skill required or the nature of 
+    the job  itself. This rate is subject to periodic reviews. A student worker is  normally paid on a weekly basis. He or she is 
+    required to complete a  time sheet in which the number of hours worked during the week is  indicated. The information so given
+    is attested to by the Supervisor and  the Head of Department where the student worker is engaged. <br></br>
+This Time-Sheet is submitted along with the Weekly Evaluation  Form and Report to the Work-Study Secretariat on
+Wednesdays for further  processing; and wages are collected from the Bursary (Cash Office) on  Fridays.</p>
+<p>&nbsp;</p>
+ </div>
+        <td>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style=" background-image: url('images/index_29b.jpg'); background-repeat:  repeat-x">
+                <tr>
+                    <td width="5%"><h:graphicImage value="images/spacer1.gif" width="57" height="20"></h:graphicImage></td>
+                    <td width="85%">&nbsp;</td>
+                    <td width="11%"><div align="right"><h:graphicImage value="images/spacer1.gif" width="120" height="20"></h:graphicImage></div></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="17%" valign="top"><table width="160" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">About Us</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Principal Officers</h:outputLink></td>
+                                        </tr>
+                                        
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Welcome Address</h:outputLink></td>
+                                        </tr>
+                                        
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Vision and Mission</h:outputLink></td>
+                                        </tr>
+                                        
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Our History</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Administration</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Registrar</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Principal Officers</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Bursary</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Student Affairs</h:outputLink></td>
+                                        </tr>    
+                                    </table>
+                                </td>
+                                <td width="18%" valign="top"><table width="170" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">Communities</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Professional Bodies</h:outputLink></td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Academic Planning Unit</h:outputLink></td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Staff Training Center</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Staff School</h:outputLink></td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Community Pharmacy</h:outputLink></td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Security Center</h:outputLink></td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">GST</h:outputLink></td>
+                                        </tr> 
+                                        
+                                    </table>
+                                    
+                                </td>
+                                
+                                <td width="18%" valign="top"><table width="170" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">Academics</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">College of Medicine</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Faculties</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">School of Post Graduate Studies</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Academic Program</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Academic Calender</h:outputLink></td>
+                                        </tr>
+                                        
+                                    </table>
+                                    
+                                </td>
+                                
+                                <td width="14%" valign="top"><table width="130" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">Media</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Latest News</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Archived News</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Notices</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Magazine</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">FAQ</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Downloads</h:outputLink></td>
+                                        </tr>
+                                        
+                                    </table>
+                                    
+                                </td>
+                                
+                                <td width="19%" valign="top"><table width="170" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">Publications</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Register for the Research Conference</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">View Publications</h:outputLink></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Search Publications</h:outputLink></td>
+                                        </tr>
+                                        
+                                    </table>
+                                    
+                                </td>
+                                
+                                <td width="14%" valign="top"><table width="110" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2" class="footerheader">Contact Us</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="2%"><h:graphicImage value="images/bullet.gif" width="11" height="5"></h:graphicImage></td>
+                                            <td width="98%" height="19" class="footercontent"><h:outputLink value="#">Contact Details</h:outputLink></td>
+                                        </tr>
+                                        
+                                    </table>
+                                    
+                                </td>
+                                
+                            </tr>
+                            
+                        </table>
+                        
+                    </td>
+                    <td valign="top"><h:graphicImage value="images/socialnt.jpg" width="100" height="100" usemap="#map2"></h:graphicImage></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><h:graphicImage value="images/spacer1.gif" width="120" height="20"></h:graphicImage></td>
+                </tr>
+                
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="10%" class="footer">Contact</td> 
+                                <td width="15%" class="footer">Privacy</td> 
+                                <td width="15%" class="footer">Terms of Use</td> 
+                                <td width="39%" class="footer">Accessibility</td> 
+                                <td width="40%" class="footer"><div align="right">powered by Enesoft Technologies 2013</div></td> 
+                            </tr>
+                            
+                        </table>
+                        
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+            
+        <map name="Map2"> 
+            <area shape="rect" coords="38,5,80,47" href="#"></area><area shape="rect" coords="41,50,80,92" href="http://twitter.com/unilag_1962" target="blank"></area>
+        </map>
+    </h:body>
+</html>
+

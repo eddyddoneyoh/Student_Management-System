@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Student Authentication Page</title>
+        <style type="text/css">           
+ul.sidenav {
+ font-size: 1.2em;
+ float: left;
+ width: 800px;
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ background: #005094;
+ border-bottom: 1px solid #3373a9;
+ border-top: 1px solid #003867;
+}
+ul.sidenav li a{
+ display: block;
+ color: #fff;
+ text-decoration: none;
+ width: 155px;
+ padding: 10px 10px 10px 35px;
+ float: left;
+ border-top: 1px solid #3373a9;
+ border-bottom: 1px solid #003867;
+}
+ul.sidenav li a:hover {
+ border-top: 1px solid #1a4c76;
+}
+ul.sidenav li span{ display: none; }
+ul.sidenav li a:hover span {
+ display: block;
+ font-size: 0.8em;
+ padding: 10px 0;
+}
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+    <h:dataTable value="#{myBean.dataList}" var="dataItem">
+        <h:column>
+            <f:facet name="header">
+                <h:outputText value="ID" />
+            </f:facet>
+           <li><h:commandLink value="Computer Science 100 Level" action="#{adminsBean.setPage('computerscience')}" /></li>            
+        </h:column>
+        
+    </h:dataTable>
+            
+            
+</h:form>
+    </h:body>
+</html>
+

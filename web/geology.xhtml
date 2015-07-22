@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Geology Page</title>
+        <style>
+form{
+    
+    margin: 0;
+    color:gray;
+    padding:4px;
+    width: 1100px;
+}
+input:focus{
+    background-color: #efffe0;
+}
+label{
+    color: navy;
+    margin-right: 6px; 
+    margin-top:2px; 
+    width:150px; 
+    float: left; 
+    text-align: right;
+    font-size: 80%;
+    
+}
+input{
+    width: 80px;
+    float: left;
+    margin-right: 5px; 
+    color: #505050;
+}
+.button
+{
+    background: #abda0f url(images/overlay.png) repeat-x;
+    padding: 8px 10px 8px;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    font-size:18px;
+    margin:15px;
+    position: relative;
+    right: -230px;
+    top: -50px;
+    width: 100px;
+}
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h3 style="color: navy; position: relative; left: 170px">Geology 200 Level Exam Scores Entry Form</h3>
+            <br></br>
+            <br></br>
+            <p>
+            <h:outputLabel value="REG NUMBER*"></h:outputLabel>
+            <h:inputText value="#{geology2.regnumber}"></h:inputText>
+            </p>
+            <br></br>
+            <br></br>
+            <p>
+            <h:outputLabel value="GEO201 SCORE*"></h:outputLabel>
+            <h:inputText value="#{geology2.geo201Score}"></h:inputText>
+            <h:outputLabel value="GEO201 GRADE*"></h:outputLabel>
+            <h:inputText value="#{geology2.geo201Grade}"></h:inputText>
+            <h:outputLabel value="GEO201 GPA*"></h:outputLabel>
+            <h:inputText value="#{geology2.geo201Gpa}"></h:inputText>
+            </p>
+            <br></br>
+            <br></br>
+            <p>
+            <h:outputLabel value="GEO202 SCORE*"></h:outputLabel>
+            <h:inputText value="#{geology2.geo202Score}"></h:inputText>
+            <h:outputLabel value="GEO202 GRADE*"></h:outputLabel>
+            <h:inputText value="#{geology2.geo202Grade}"></h:inputText>
+            <h:outputLabel value="GEO202 GPA*"></h:outputLabel>
+            <h:inputText value="#{geology2.geo202Gpa}"></h:inputText>
+            </p>
+            <BR></BR>
+            <BR></BR>
+            <p>
+            <h:outputLabel value="MATH201 SCORE*"></h:outputLabel>
+            <h:inputText value="#{geology2.math201Score}"></h:inputText>
+            <h:outputLabel value="MATH201 GRADE*"></h:outputLabel>
+            <h:inputText value="#{geology2.math201Grade}"></h:inputText>
+            <h:outputLabel value="MATH201 GPA*"></h:outputLabel>
+            <h:inputText value="#{geology2.math201Gpa}"></h:inputText>
+            </p>
+            <br></br>
+            <br></br>
+            <p>
+            <h:outputLabel value="GST102 SCORE*"></h:outputLabel>
+            <h:inputText value="#{geology2.gst102Score}"></h:inputText>
+            <h:outputLabel value="GST102 GRADE*"></h:outputLabel>
+            <h:inputText value="#{geology2.gst102Grade}"></h:inputText>
+            <h:outputLabel value="GST102 GPA*"></h:outputLabel>
+            <h:inputText value="#{geology2.gst102Gpa}"></h:inputText>
+            </p>
+            <br></br>
+            <br></br>
+            <p>
+            <h:outputLabel value="PHY201 SCORE*"></h:outputLabel>
+            <h:inputText value="#{geology2.phy201Score}"></h:inputText>
+            <h:outputLabel value="PHY201 GRADE*"></h:outputLabel>
+            <h:inputText value="#{geology2.phy201Grade}"></h:inputText>
+            <h:outputLabel value="PHY201 GPA*"></h:outputLabel>
+            <h:inputText value="#{geology2.phy201Gpa}"></h:inputText>
+            </p>
+            <br></br>
+            <br></br>
+            <p>
+            <h:outputLabel value="CHM201 SCORE*"></h:outputLabel>
+            <h:inputText value="#{geology2.chm201Score}"></h:inputText>
+            <h:outputLabel value="CHM201 GRADE*"></h:outputLabel>
+            <h:inputText value="#{geology2.chm201Grade}"></h:inputText>
+            <h:outputLabel value="CHM201 GPA*"></h:outputLabel>
+            <h:inputText value="#{geology2.chm201Gpa}"></h:inputText>
+            </p>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <div>
+                <h:commandButton value="Submit &raquo;" class="button" action="#{geology2.insert()}"></h:commandButton>&nbsp;<h:commandButton type="Reset" value="Reset &raquo;" class="button"></h:commandButton>
+            </div>
+        </h:form>
+    </h:body>
+</html>
+

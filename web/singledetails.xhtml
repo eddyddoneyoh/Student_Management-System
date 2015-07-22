@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Single Student Display page</title>
+        <link rel="stylesheet" type="text/css" href="page.css" />
+        <style type="text/css">
+order-table{   
+	border-collapse:collapse;
+}
+
+order-table-header{
+	text-align:center;
+	background:none repeat scroll 0 0 #E5E5E5;
+	border-bottom:1px solid #BBBBBB;
+	padding:16px;
+}
+
+order-table-odd-row{
+	text-align:center;
+	background:none repeat scroll 0 0 #FFFFFFF;
+	border-top:1px solid #BBBBBB;
+}
+
+order-table-even-row{
+	text-align:center;
+	background:none repeat scroll 0 0 #F9F9F9;
+	border-top:1px solid #BBBBBB;
+}
+        </style>
+    </h:head>
+    <h:body>
+         <center><h1>Greater Tomorrow Group of School</h1></center>
+        <br></br>
+        <br></br>
+        <center><h:outputLink value="studentupdate.xhtml">Update Student Record</h:outputLink> &nbsp;&nbsp;<h:outputLink value="aboutus.xhtml">About us</h:outputLink>&nbsp;&nbsp;<h:outputLink value="DeleteStudentRecord.xhtml">Delete Student Record</h:outputLink>&nbsp;&nbsp;<h:outputLink value="displaysinglestudentdetails.xhtml">Single Student Details</h:outputLink>&nbsp;&nbsp;<h:outputLink value="displaystudentdetails.xhtml">Student Details</h:outputLink>&nbsp;&nbsp;<h:outputLink value="studentlogin.xhtml">Students Login</h:outputLink>&nbsp;&nbsp;<h:outputLink value="studentregistration.xhtml">Students Registration Page</h:outputLink>&nbsp;&nbsp;<h:outputLink value="studentsection.xhtml">Students Section</h:outputLink></center> 
+        <br></br><br></br>
+        <h:outputLink value="displaysinglestudentdetails.xhtml">Check Another Student Details</h:outputLink>
+        <h:form id="fm2">
+        <center><h1><b>Student Details</b></h1></center>
+        <br></br>
+        <center>
+            <h:dataTable id="dt2" value="#{singleStudentDisplayBean.studentInfo()}" var="stud" bgcolor="#F1F1F1" border="2" cellpadding="2" cellspacing="2" rows="0" width="100%" dir="LTR">
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Reg Number"/>
+                    </f:facet>
+                    <h:outputText value="#{stud.regnumber}"></h:outputText>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="First Name"/>     
+                    </f:facet>
+                    <h:outputText value="#{stud.fname}"></h:outputText>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Last Name"/>     
+                    </f:facet>
+                    <h:outputText value="#{stud.lname}"></h:outputText>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Class"/>     
+                    </f:facet>
+                    <h:outputText value="#{stud.sclass}"></h:outputText>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="D.O.B"/>     
+                    </f:facet>
+                    <h:outputText value="#{stud.dateofbirth}"></h:outputText>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="City"/>     
+                    </f:facet>
+                    <h:outputText value="#{stud.city}"></h:outputText>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Sex"/>     
+                    </f:facet>
+                    <h:outputText value="#{stud.sex}"></h:outputText>
+                </h:column>
+                
+                                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="State"/>     
+                    </f:facet>
+                    <h:outputText value="#{stud.state}"></h:outputText>
+                </h:column>
+                
+                                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Country"/>     
+                    </f:facet>
+                    <h:outputText value="#{stud.country}"></h:outputText>
+                </h:column>
+                
+                                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Password"/>     
+                    </f:facet>
+                    <h:outputText value="#{stud.password}"></h:outputText>
+                </h:column>
+                
+                                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Email"/>     
+                    </f:facet>
+                    <h:outputText value="#{stud.email}"></h:outputText>
+                </h:column>
+                
+                                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Phone Number"/>     
+                    </f:facet>
+                    <h:outputText value="#{stud.phone}"></h:outputText>
+                </h:column>
+                
+                                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Street"/>     
+                    </f:facet>
+                    <h:outputText value="#{stud.street}"></h:outputText>
+                </h:column>
+            </h:dataTable>
+        </center>
+        </h:form>
+    </h:body>
+</html>
+

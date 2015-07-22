@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Checking Page</title>
+        <style type="text/css">
+            body {
+    font-family: Verdana,Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin:0px;
+    font-size: 15pt;
+    background-color: #373C40;
+}
+            form.register{
+    width:900px;
+    margin: 20px auto 0px auto;
+    height:600px;
+    background-color:#fff;
+    padding:5px;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    border: 3px solid #E1E1E1;
+    font-size: 15pt;
+}
+p {
+    padding: 7px 0 7px 0;
+    font-weight: 500;
+    font-size: 10pt;
+}
+h1 {
+    font-weight:200;
+    color: #abda0f;
+    font-size:16pt;
+    background: transparent url(images/h1.png) no-repeat center left;
+    padding-left:33px;
+    margin:7px 5px 8px 8px;
+}
+
+        </style>
+    </h:head>
+    <h:body>
+        <h:form class="register" onsubmit="#{studentLogin.checkValidUser()}">
+            <h1>Welcome <h:outputText value="#{studentLogin.fname}"/>&nbsp;<h:outputText value="#{studentLogin.lname}"/>, Below are your Student informations</h1>
+            <br></br>
+            <p>
+             <h:outputLabel value="Registration Number:"></h:outputLabel>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <h:outputText value="#{studentLogin.sregnumber}"></h:outputText>
+            </p>
+            <p>
+            <h:outputLabel value="First Name:"></h:outputLabel>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <h:outputText value="#{studentLogin.fname}"></h:outputText>
+            </p>
+            <p>
+            <h:outputLabel value="Last Name:"></h:outputLabel>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <h:outputText value="#{studentLogin.lname}"></h:outputText>
+            </p>
+            <p>
+                        <h:outputLabel value="Student Class:"></h:outputLabel>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <h:outputText value="#{studentLogin.sclass}"></h:outputText>
+            </p>
+            <p>
+                        <h:outputLabel value="D.O.B:"></h:outputLabel>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <h:outputText value="#{studentLogin.dateofbirth}"></h:outputText>
+            </p>
+            <p>
+                        <h:outputLabel value="Sex:"></h:outputLabel>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <h:outputText value="#{studentLogin.sex}"></h:outputText>
+            </p>
+                
+            <p>
+                        <h:outputLabel value="City:"></h:outputLabel>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <h:outputText value="#{studentLogin.city}"></h:outputText>
+            </p>
+            <p>
+                        <h:outputLabel value="Country:"></h:outputLabel>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <h:outputText value="#{studentLogin.country}"></h:outputText>
+            </p>
+            <p>
+                        <h:outputLabel value="Password:"></h:outputLabel>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <h:outputText value="#{studentLogin.spassword}"></h:outputText>
+            </p>
+                            <fieldset class="row1">
+                <legend>Student Details</legend>
+            <p>
+                        <h:outputLabel value="Email:"></h:outputLabel>
+                        &nbsp;&nbsp;
+                        <h:outputText value="#{studentLogin.email}"></h:outputText>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <h:outputLabel value="Phone:"></h:outputLabel>
+                        &nbsp;&nbsp;
+                        <h:outputText value="#{studentLogin.phone}"></h:outputText>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <h:outputLabel value="Street:"></h:outputLabel>
+                        &nbsp;&nbsp;
+                        <h:outputText value="#{studentLogin.street}"></h:outputText>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <h:outputLabel value="State:"></h:outputLabel>
+                        &nbsp;&nbsp;
+                        <h:outputText value="#{studentLogin.state}"></h:outputText>
+                        </p>
+                </fieldset>
+        </h:form>
+    </h:body>
+</html>
+

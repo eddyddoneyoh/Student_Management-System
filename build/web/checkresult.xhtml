@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Student Result Center</title>
+        <style type="text/css">
+<!--
+body {
+	background-image: url(images/bg.jpg);
+	background-repeat:repeat-x;
+	margin-top: 2px;
+}
+body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+}
+a {
+	font-size: 11px;
+	color: #333333;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #333333;
+}
+a:hover {
+	text-decoration: none;
+	color: #333333;
+}
+a:active {
+	text-decoration: none;
+	color: #333333;
+}
+-->
+</style>
+    </h:head>
+    <h:body>
+        <table width="810" border="0" cellpadding="0" cellspacing="0" align="center" style="border:1px solid #009DFF;">
+            <tbody>
+                <tr>
+                    <td height="114" colspan="3" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td width="810" height="114" valign="top"><h:graphicImage width="810" height="114" url="images/index_09.jpg"></h:graphicImage>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+                        
+                    </td>
+                </tr>
+                  <tr>
+                      <td width="186" height="77">&nbsp;</td>
+                      <td width="462">&nbsp;</td>
+                      <td width="162">&nbsp;</td>
+                  </tr>
+                <tr>
+                    <td height="160">&nbsp;</td>
+                    <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td width="737" height="160"><h:form>
+                                            <table width="375" border="0" align="center" bgcolor="#F0FEFE">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="3"><div align="center"><strong>Check your Result</strong></div></td>
+                                                    </tr>
+                                                     <h:graphicImage width="84" height="94" url="images/Steel_Padlock.jpg" style=" float: right; position:  relative; left: -105px; bottom: -40px"></h:graphicImage>
+                                                    <tr>
+                                                        <td width="89"><strong><h:outputText value="Reg Number"></h:outputText></strong></td>
+                                                        <td width="172"><h:inputText value="#{resultBean.regnumber}"></h:inputText></td>
+                                                    </tr>
+                                                    <tr>
+                                                         <td>&nbsp;</td>
+                                                         <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong><h:outputText value="Department"></h:outputText></strong></td>
+                                                        <td><h:inputText value="#{resultBean.department}"></h:inputText></td>
+                                                    </tr>
+                                                    <tr>
+                                                         <td>&nbsp;</td>
+                                                         <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong><h:outputText value="Level(Class)"></h:outputText></strong></td>
+                                                        <td><h:inputText value="#{resultBean.level}"></h:inputText></td>
+                                                    </tr>
+                                                    <tr>
+                                                         <td>&nbsp;</td>
+                                                         <td>&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                         <td>&nbsp;</td>
+                                                         <td><div align="center">
+                                                                 <h:commandButton action="#{resultBean.checkInput()}" value="Submit &raquo;" class="button"></h:commandButton>&nbsp;<h:commandButton type="Reset" value="Reset &raquo;" class="button"></h:commandButton>
+                                                         </div></td>
+                                                         <td>&nbsp;</td>
+                                                    </tr>
+                                                </tbody>
+                                                
+                                            </table>
+                                            
+                                        </h:form>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+                        
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td height="144">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </h:body>
+</html>
+
